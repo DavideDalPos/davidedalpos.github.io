@@ -38,7 +38,7 @@ staticman:
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ['Davide', 'email', 'message']
   transforms:
     email                : "md5"
   generatedFields:
@@ -84,7 +84,7 @@ author:
   avatar           : "profile.png"
   bio              : "I am an evolutionary morphologist"
   location         : "Orlando, FL (USA)"
-  employer         : "Unviersity of Central Florida"
+  employer         : "Unviersity of Central Florida (UCF)"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=wYj3d_oAAAAJ"
   email            :
