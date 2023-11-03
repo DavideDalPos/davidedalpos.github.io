@@ -14,4 +14,4 @@ preserved in the collections of the Museo di Storia Naturale, Venice (Italy), is
 
 [Download paper here](https://tinyurl.com/28dvn4e2)
 
-Recommended citation: Your Name, You. (2015). "Rediscovery and redescription of the holotype of <i>Stephanus</i> (<i>Distephanus</i>) [sic!] <i>athesinus</i> Biegeleben, 1929, with comments on its identity and new distributional data for <i>Megischus anomalipes</i> (Förster, 1855) (Hymenoptera, Stephanidae)" <i>Lavori - Società Veneziana di Scienze Naturali </i>. 1(3).
+<b>Recommended citation:<b> Your Name, You. (2015). "Rediscovery and redescription of the holotype of <i>Stephanus</i> (<i>Distephanus</i>) [sic!] <i>athesinus</i> Biegeleben, 1929, with comments on its identity and new distributional data for <i>Megischus anomalipes</i> (Förster, 1855) (Hymenoptera, Stephanidae)" <i>Lavori - Società Veneziana di Scienze Naturali </i>, 1(3): 5–14.
