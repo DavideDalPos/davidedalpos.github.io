@@ -1,15 +1,15 @@
 ---
-title: "First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini)"
+title: "First record of <i>Ibalia jakowlewi</i> Jacobson, 1899 and of the subgenus <i>Tremibalia</i> for Italy (Hymenoptera, Cynipoidea, Ibaliidae)"
 collection: publications
-permalink: /publication/2017-12-01-First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini)
-excerpt: 'The genus <i>Saotis</i> Förster, 1869, with its species Saotis mirabilis Schmiedeknecht, 1914, is hereby recorded for the first time from Italy.'
+permalink: /publication/2017-12-01-First record of <i>Ibalia jakowlewi</i> Jacobson, 1899 and of the subgenus <i>Tremibalia</i> for Italy (Hymenoptera, Cynipoidea, Ibaliidae)
+excerpt: '<i>Ibalia jakowlewi</i> Jacobson, 1899 is hereby recorded for the first time for Italy, based on three specimens collected in the Veneto region, which in turn represent the first record of the subgenus <i>Tremibalia</i> Kierych, 1973 for Italy. Some ecological notes based on the circumstances of their sampling are also reported'
 date: 2017-12-01
 venue: 'Bollettino del Museo di Storia Naturale di Venezia'
-paperurl: 'https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.7.pdf'
-citation: 'Dal Pos, D. (2017). &quot;First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini).&quot; <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 59–62.'
+paperurl: 'https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.6.pdf'
+citation: 'Dal Pos, D. (2017). &quot;First record of <i>Ibalia jakowlewi</i> Jacobson, 1899 and of the subgenus <i>Tremibalia</i> for Italy (Hymenoptera, Cynipoidea, Ibaliidae).&quot; <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 53–57.'
 ---
-The genus <i>Saotis</i> Förster, 1869, with its species Saotis mirabilis Schmiedeknecht, 1914, is hereby recorded for the first time from Italy.
+<i>Ibalia jakowlewi</i> Jacobson, 1899 is hereby recorded for the first time for Italy, based on three specimens collected in the Veneto region, which in turn represent the first record of the subgenus <i>Tremibalia</i> Kierych, 1973 for Italy. Some ecological notes based on the circumstances of their sampling are also reported.
 
-[Download paper here](https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.7.pdf)
+[Download paper here](https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.6.pdf)
 
-Recommended citation: Dal Pos, D. (2017). "First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini)" <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 59–62.
+Recommended citation: Dal Pos, D. (2017). "First record of <i>Ibalia jakowlewi</i> Jacobson, 1899 and of the subgenus <i>Tremibalia</i> for Italy (Hymenoptera, Cynipoidea, Ibaliidae)" <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 53–57.

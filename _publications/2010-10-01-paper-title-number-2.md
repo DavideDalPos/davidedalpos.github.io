@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 2"
+title: "First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini)"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/2017-12-01-First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini)
+excerpt: 'The genus <i>Saotis</i> Förster, 1869, with its species Saotis mirabilis Schmiedeknecht, 1914, is hereby recorded for the first time from Italy.'
+date: 2017-12-01
+venue: 'Bollettino del Museo di Storia Naturale di Venezia'
+paperurl: 'https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.7.pdf'
+citation: 'Dal Pos, D. (2017). &quot;First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini).&quot; <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 59–62.'
 ---
-This paper is about the number 2. The number 3 is left for future work.
+The genus <i>Saotis</i> Förster, 1869, with its species <i>Saotis mirabilis</i> Schmiedeknecht, 1914, is hereby recorded for the first time from Italy.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[Download paper here](https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.7.pdf)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+Recommended citation: Dal Pos, D. (2017). "First records of the parasitoid wasp genus <i>Saotis</i> Förster, 1869 for Italy (Hymenoptera, Ichneumoindae, Ctenopelmatinae, Mesoleiini)" <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 59–62.
