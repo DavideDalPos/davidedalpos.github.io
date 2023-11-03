@@ -1,15 +1,16 @@
 ---
-title: "Paper Title Number 3"
+title: "Rediscovery and redescription of the holotype of <i>Stephanus</i> (<i>Distephanus</i>) [sic!] <i>athesinus</i> Biegeleben, 1929, with comments on its identity and new distributional data for <i>Megischus anomalipes</i> (Förster, 1855) (Hymenoptera, Stephanidae)"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/2017-02-01-Stephanidae
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+date: 2017-02-01
+venue: 'Lavori - Società Veneziana di Scienze Naturali '
+paperurl: 'https://tinyurl.com/28dvn4e2'
+citation: 'Dal Pos, D. (2017). &quot;Rediscovery and redescription of the holotype of <i>Stephanus</i> (<i>Distephanus</i>) [sic!] <i>athesinus</i> Biegeleben, 1929, with comments on its identity and new distributional data for <i>Megischus anomalipes</i> (Förster, 1855) (Hymenoptera, Stephanidae).&quot; <i>Lavori - Società Veneziana di Scienze Naturali </i>. 1(3).'
 ---
-This paper is about the number 3. The number 4 is left for future work.
+The rediscovery of the holotype of <i>Stephanus</i> (<i>Distephanus</i>) [sic!] <i>athesinus</i> Biegeleben, 1929,
+preserved in the collections of the Museo di Storia Naturale, Venice (Italy), is recorded together with a redescription and a comment on its taxonomic identity. Therefore, its synonymy with <i>Megischus anomalipes</i> (Förster, 1855) is confirmed. New distributional data for <i>M. anomalipes</i> is provided: it is recorded for the first time from the Italian regions of Veneto, Emilia-Romagna, Tuscany and Basilicata, and newly recorded from Greece.
 
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
+[Download paper here](https://tinyurl.com/28dvn4e2)
 
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
+Recommended citation: Your Name, You. (2015). "Rediscovery and redescription of the holotype of <i>Stephanus</i> (<i>Distephanus</i>) [sic!] <i>athesinus</i> Biegeleben, 1929, with comments on its identity and new distributional data for <i>Megischus anomalipes</i> (Förster, 1855) (Hymenoptera, Stephanidae)" <i>Lavori - Società Veneziana di Scienze Naturali </i>. 1(3).
