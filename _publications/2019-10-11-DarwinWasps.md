@@ -10,8 +10,9 @@ citation: 'Klopfstein, S.; Santos, B. F.; Shaw, M. R.; Alvarado, M.; Bennett, A.
 ---
 <b>Abstract:</b> <i>The parasitoid wasp family Ichneumonidae is arguably one of the groups for which current knowledge lags most strongly behind their enormous diversity. In a five-day meeting in Basel (Switzerland) in June 2019, 22 researchers from 14 countries met to discuss the most important issues in ichneumonid research, including increasing the speed of species discovery, resolving higher-level relationships, and studying the radiation of these parasitoids onto various host groups through time. All agreed that it is time to advertise ichneumonid research more broadly and thereby attract young talents to this group for which specialists are sorely lacking, as well as increase public awareness about their exciting biology and ecological impact. In order to popularize the group, we here suggest a new vernacular name for the family, “Darwin wasps”, to reflect the pivotal role they played in convincing Charles Darwin that not all of creation could have been created by a benevolent god. We hope that the name catches on, and that Darwin wasps start buzzing more loudly across all disciplines of biology</i>.
 
-[Download paper here](https://doi.org/10.37486/2675-1305.ec01006)
-
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.37486/2675-1305.ec01006"></div>
+
+[Download paper here](https://doi.org/10.37486/2675-1305.ec01006)
+
