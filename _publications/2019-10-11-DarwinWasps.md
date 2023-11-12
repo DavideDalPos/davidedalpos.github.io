@@ -12,9 +12,7 @@ citation: 'Klopfstein, S.; Santos, B. F.; Shaw, M. R.; Alvarado, M.; Bennett, A.
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.37486/2675-1305.ec01006"></div>
-
-&nbsp
+<p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.37486/2675-1305.ec01006"></div></p>
 
 [Download paper here](https://doi.org/10.37486/2675-1305.ec01006)
 
