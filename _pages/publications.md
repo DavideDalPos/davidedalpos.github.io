@@ -6,15 +6,16 @@ author_profile: true
 ---
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-**Dal Pos, D.**; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874"></div></p> 
+**Dal Pos, D.**; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) 
+<p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874"></div></p> 
 
 **Dal Pos, D.** & Di Giovanni, F. (2023) Hymenoptera (Trigonaloidea, Stephanoidea, Ichneumonoidea). <i>In</i> Minelli, A & Bologna, M. A. (eds.) <i>Sistematica ed Evoluzione degli Esapodi</i>. Liguori Editore, Napoli, Italy: 313–372p.'
 
 **Dal Pos, D.**; Claridge, B.; Diller, E.; van Noort, S. & Di Giovanni, F. (2023) Still counting: new records, nomenclatural notes, and three new species of Phaeogenini (Hymenoptera, Ichneumonidae,
-Ichneumoninae) from the Afrotropical region. <i>European Journal of Taxonomy</i>, 868: 1–71. [Download paper here](https://doi.org/10.5852/ejt.2023.868.2105) <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.5852/ejt.2023.868.2105"></div></p> 
+Ichneumoninae) from the Afrotropical region. <i>European Journal of Taxonomy</i>, 868: 1–71. [Download paper here](https://doi.org/10.5852/ejt.2023.868.2105) 
+<p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.5852/ejt.2023.868.2105"></div></p> 
 
 **Dal Pos, D.**; Heilman, V. & Welter-Schultes, F. (2022) Platylabini (Hymenoptera: Ichneumonidae: Ichneumoninae) of the south-eastern United States: new distributional data, taxonomic notes, illustrated keys, and an annotated catalogue of the genera and species. <i>Journal of Natural History</i>, 56(45–48): 1869–1938.[Download paper here](https://doi.org/10.1080/00222933.2022.2134061) 
-
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1080/00222933.2022.2134061"></div></p> 
 
 Zamani, A.; **Dal Pos, D.**; Fric, Z. F.; Orfinger, A. B.; Scherz, M. D.; Bartoňová, A. S.; Gante, H. F. (2022) The future of zoological taxonomy is integrative, not minimalist. <i>Systematics and Biodiversity</i>, 20(1): 1–14. [Download paper here](https://doi.org/10.1080/14772000.2022.2063964)
