@@ -17,6 +17,7 @@ author_profile: true
 <ol>
 <div class='title'>
 <li> <b>Dal Pos, D.</b>; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) 
+</li>
 </div>
 <p><div class='altmetric-embed1' data-badge-type='donut' data-doi="10.7717/peerj.15874"></div></p> 
 
