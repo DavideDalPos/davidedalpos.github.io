@@ -3,7 +3,7 @@ title: "A revised terminology for male genitalia in Hymenoptera (Insecta), with 
 collection: publications
 permalink: /publication/2023-10-17-IchGenitalia
 date: 2023-10-17
-venue: 'European Journal of Taxonomy'
+venue: 'PeerJ'
 paperurl: 'http://doi.org/10.7717/peerj.15874'
 citation: '<b>Dal Pos, D.</b>; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.'
 ---
