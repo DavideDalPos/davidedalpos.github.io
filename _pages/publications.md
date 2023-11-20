@@ -24,33 +24,25 @@ Ichneumoninae) from the Afrotropical region. <i>European Journal of Taxonomy</i>
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1080/00222933.2022.2134061"></div></p> 
 
 <li> Zamani, A.; <b>Dal Pos, D.</b>; Fric, Z. F.; Orfinger, A. B.; Scherz, M. D.; Bartoňová, A. S.; Gante, H. F. (2022) The future of zoological taxonomy is integrative, not minimalist. <i>Systematics and Biodiversity</i>, 20(1): 1–14. [Download paper here](https://doi.org/10.1080/14772000.2022.2063964)
-
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1080/14772000.2022.2063964"></div></p> 
 
 <li> <b>Dal Pos, D.</b>; Carpenter, J. M. & Uliana, M. (2022) The Giordani Soika collection of Eumeninae at the Natural History Museum of Venice Giancarlo Ligabue: catalogue of species and type specimens (Insecta, Hymenoptera, Vespidae). <i>Zootaxa</i>, 5137(1): 1–111. [Download paper here](https://doi.org/10.11646/zootaxa.5137.1.1)
-
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.11646/zootaxa.5137.1.1"></div></p> 
 
 <li> Zamani, A.; Zamani, A., Fric, Z.F., Gante, H.F.,
 Hopkins, T., Orfinger, A.B., Scherz, M.D.; Bartoňová, A. S. & <b>Dal Pos, D.</b> (2022) DNA barcodes on their own are not enough to describe a species. <i>Systematics Entomology</i>, 47(3): 385–389. [Download paper here](http://doi.org/10.1111/syen.12538)
-
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/syen.12538"></div></p> 
 
-<p>
 <li> Klopfstein, S.; Santos, B. F.; Shaw, M. R.; Alvarado, M.; Bennett, A. M. R.; <b>Dal Pos, D.</b>; Giannotta, M.; Herrera, A. D. F.; Karlsson, D.; Khalaim, A. I.; Lima, A. R; Mikó, I.; Sääksjärvi, I. E.; Shimizu, S.; Spasojevic, T.; van Noort, S.; Vilhelmsen, L. & Broad, G. R. (2019) Darwin wasps: a new name heralds renewed efforts to unravel the evolutionary history of Ichneumonidae. <i>Entomological Communications</i>, 1: ec010. [Download paper here](https://doi.org/10.37486/2675-1305.ec01006)
-
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.37486/2675-1305.ec01006"></div></p> 
-</p>
 
 <p>
 <li> Riedel, M. & <b>Dal Pos, D.</b> (2019) Contribution to the Afrotropical Ichneumoninae (Hymenoptera, Ichneumonidae) from Gabon and Sierra Leone, with descriptions of five new species and two new subspecies. <i>Linzer biologische Beiträge</i>, 51(1): 419–436. [Download paper here](https://www.zobodat.at/publikation_articles.php?id=432843)
 </p>
 
-<p>
 <li> <b>Dal Pos, D.</b> & Rousse, P. (2018) First record of the genus <i>Genaemirum</i> (Hymenoptera, Ichneumonidae, Ichneumoninae) from West Africa, with the description of a new species from Guinea. <i>European Journal of Taxonmy</i>, 473: 1–11. [Download paper here](https://doi.org/10.5852/ejt.2018.473)
-
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.5852/ejt.2018.473"></div></p> 
-</p>
+
 
 <p>
 <li> <b>Dal Pos, D.</b> (2017) First record of <i>Ibalia jakowlewi</i> Jacobson, 1899 and of the subgenus <i>Tremibalia</i> for Italy (Hymenoptera, Cynipoidea, Ibaliidae). <i>Bollettino del Museo di Storia Naturale di Venezia</i>, 68: 53–57. [Download paper here](https://msn.visitmuve.it/wp-content/uploads/2017/12/Boll.68.2017.6.pdf)
