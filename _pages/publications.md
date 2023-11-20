@@ -6,7 +6,7 @@ author_profile: true
 ---
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <ol>
-<li>**Dal Pos, D.**; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) 
+<li> <i>Dal Pos, D.</i>; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) 
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874"></div></p> 
 
 <li>**Dal Pos, D.** & Di Giovanni, F. (2023) Hymenoptera (Trigonaloidea, Stephanoidea, Ichneumonoidea). <i>In</i> Minelli, A & Bologna, M. A. (eds.) <i>Sistematica ed Evoluzione degli Esapodi</i>. Liguori Editore, Napoli, Italy: 313–372p.'
