@@ -4,12 +4,20 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+<style>
+  .title {
+    display: inline;
+  }
+  .title2 {
+    display: inline
+  }
+
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <ol>
-<li> <b>Dal Pos, D.</b>; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) 
+<li class='title'> <b>Dal Pos, D.</b>; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) A revised terminology for male genitalia in Hymenoptera (Insecta), with a special emphasis on Ichneumonoidea. <i>PeerJ</i> 11: e15874.' [link](http://doi.org/10.7717/peerj.15874) 
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874"></div></p> 
 
-<li> <b>Dal Pos, D.</b> & Di Giovanni, F. (2023) Hymenoptera (Trigonaloidea, Stephanoidea, Ichneumonoidea). <i>In</i> Minelli, A & Bologna, M. A. (eds.) <i>Sistematica ed Evoluzione degli Esapodi</i>. Liguori Editore, Napoli, Italy: 313–372p.'
+<li class='title2'> <b>Dal Pos, D.</b> & Di Giovanni, F. (2023) Hymenoptera (Trigonaloidea, Stephanoidea, Ichneumonoidea). <i>In</i> Minelli, A & Bologna, M. A. (eds.) <i>Sistematica ed Evoluzione degli Esapodi</i>. Liguori Editore, Napoli, Italy: 313–372p.'
 
 <li> <b>Dal Pos, D.</b>; Claridge, B.; Diller, E.; van Noort, S. & Di Giovanni, F. (2023) Still counting: new records, nomenclatural notes, and three new species of Phaeogenini (Hymenoptera, Ichneumonidae,
 Ichneumoninae) from the Afrotropical region. <i>European Journal of Taxonomy</i>, 868: 1–71. [Download paper here](https://doi.org/10.5852/ejt.2023.868.2105) 
