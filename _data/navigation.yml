@@ -1,8 +1,11 @@
 # main links links
 main:
+  - title: "Research"
+    url: /research/
+  
   - title: "Publications"
     url: /publications/
-
+  
   #- title: "Talks"
   #  url: /talks/    
 
@@ -17,6 +20,10 @@ main:
     
   - title: "CV"
     url: /cv/
-    
+ `- title: "Contact"
+    url: /contact/   
+
+  - title: "World Ichneumonidae Database"
+    url: /WID/  
   #- title: "Guide"
   #  url: /markdown/
