@@ -8,7 +8,7 @@ author_profile: true
   .title {
     display: flex;
   }
-  .altmetric-embed1{
+  .altmetric-embed{
     display: flex;
   }
 </style>
