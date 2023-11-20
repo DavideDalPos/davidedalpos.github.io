@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-If you are interest in my full CV, feel free to dowload it [here](https://davide.dalpos.github.io/files/DDP_CV.pdf).
+If you are interest in my full CV, feel free to dowload it [here](https://davidedalpos.github.io/files/DDP_CV.pdf).
 
 
 <!---
