@@ -10,7 +10,10 @@ author_profile: true
 
 <h3>2024</h3>
 <ol>
-
+{% assign current_year = "2024" %}
+{% assign publications_2024 = site.data.publications | where: "year", current_year %}
+{% for publication in publications_2024 %}
+  {% assign counter = counter | plus: 1 %}
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1371/journal.pone.0307404" style="float: right"></div></p>
 <li style="margin-right: 100px; text-align: justify"> Meier, N.; Gordon, M. L.; van Noort, S.; Reynolds, T.; Rindos, 
   M.; Di Giovanni, F.; Broad, G. R.; Spasojevic, T.; Bennett, A. M. R.; <i>Dal Pos, D.</i> and Klopfstein, S. (2024) 
@@ -54,9 +57,9 @@ author_profile: true
 
 <h3>2023</h3>
 <ol> 
-{% assign current_year = "2022" %}
-{% assign publications_2022 = site.data.publications | where: "year", current_year %}
-{% for publication in publications_2022 %}
+{% assign current_year = "2023" %}
+{% assign publications_2023 = site.data.publications | where: "year", current_year %}
+{% for publication in publications_2023 %}
   {% assign counter = counter | plus: 1 %}
 
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874" style="float: right"></div></p>
