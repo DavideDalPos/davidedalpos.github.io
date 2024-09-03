@@ -7,8 +7,20 @@ author_profile: true
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+<style>
+  ol.continuous {
+    counter-reset: item;
+  }
+  ol.continuous li {
+    counter-increment: item;
+  }
+  ol.continuous li:before {
+    content: counter(item) ". ";
+  }
+</style>
+
 <h3>2024</h3>
-<ol>
+<ol class="continuous">
 
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1371/journal.pone.0307404" style="float: right"></div></p>
 <li style="margin-right: 100px; text-align: justify"> Meier, N.; Gordon, M. L.; van Noort, S.; Reynolds, T.; Rindos, 
@@ -51,7 +63,7 @@ author_profile: true
 </ol>
 
 <h3>2023</h3>
-<ol start="5"> 
+<ol class="continuous"> 
 
 <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.15874" style="float: right"></div></p>
 <li style="margin-right: 100px; text-align: justify"> <b>Dal Pos, D.</b>; Mikó, E. J. Talamas, L. Vilhelmsen and B. J. Sharanowski (2023) 
