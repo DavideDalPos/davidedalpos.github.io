@@ -15,9 +15,9 @@
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
-    font-family: $serif;
+    font-family: $sans-serif-narrow;
 
-    @include breakpoint($X-large) {
+    @include breakpoint($x-large) {
       max-width: $x-large;
     }
 
