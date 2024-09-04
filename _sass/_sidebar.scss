@@ -83,9 +83,9 @@
   }
 
   img {
-    max-width: 175px; /* Maximum width of the image */
-    width: 175px; /* Ensure the image has a fixed width */
-    height: 175px; /* Ensure the image has a fixed height */
+    max-width: 200px; /* Maximum width of the image */
+    width: 200px; /* Ensure the image has a fixed width */
+    height: 2000px; /* Ensure the image has a fixed height */
     object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
     border-radius: 0;
 
