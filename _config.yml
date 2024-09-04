@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Davide Dal Pos"
 title_separator          : "-"
-favicon                  : \favicon.ico
+favicon                  : /favicon.ico
 name                     : &name "Davide Dal Pos"
 description              : &description "personal description"
 url                      : https://davidedalpos.github.io/
