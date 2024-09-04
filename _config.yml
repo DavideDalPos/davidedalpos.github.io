@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ciao Dal Pos"
+title                    : "Davide Dal Pos"
 title_separator          : "-"
 name                     : &name "Davide Dal Pos"
 description              : &description "personal description"
