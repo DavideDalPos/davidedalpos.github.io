@@ -16,10 +16,9 @@
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $serif;
-    color: #007bff !important;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
+    @include breakpoint($small) {
+      max-width: $small;
     }
 
     nav {
