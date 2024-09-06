@@ -11,12 +11,6 @@ main:
 
   - title: "Projects"
     url: /teaching/    
-    
-  - title: "WID"
-    url: /wid/
-
-  - title: "CV"
-    url: /cv/ 
   
-  - title: "Guide"
-    url: /markdown/
+  - title: "News"
+    url: /news/
