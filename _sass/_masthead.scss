@@ -38,49 +38,16 @@
     padding: 0;
     clear: both;
     list-style-type: none;
-    position: relative;
+  }
+}
 
-    li {
-      float: left;
-      position: relative;
+.masthead__menu-item {
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
 
-      a {
-        padding: 14px 20px;
-        display: block;
-        color: $text-color;
-        background-color: $bg-color;
-        
-        &:hover {
-          background-color: $hover-bg-color;
-        }
-      }
-
-      // Dropdown submenu
-      ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: $bg-color;
-        z-index: 1;
-
-        li {
-          float: none;
-          
-          a {
-            padding: 12px 16px;
-            color: $text-color;
-
-            &:hover {
-              background-color: $hover-bg-color;
-            }
-          }
-        }
-      }
-
-      &:hover ul {
-        display: block;  // Show the dropdown menu on hover
-      }
-    }
+  &--lg {
+    padding-right: 2em;
+    font-weight: 700;
   }
 }
