@@ -19,14 +19,38 @@ author_profile: true
   }
 
   .hover-link {
-    color: #9e9e9e; /* Lighter black */
+    color: #9c6161; /* Lighter black */
     text-decoration: none !important; /* Remove underline */
     transition: text-shadow 0.3s ease; /* Smooth transition for the shadow effect */
-  }
+    cursor: pointer; /* Change cursor to pointer */
+}
 
-  .hover-link:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
-  }
+.hover-link:hover {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+}
+
+.tooltip {
+    visibility: hidden; /* Hide tooltip by default */
+    width: 120px; /* Set tooltip width */
+    background-color: #555; /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    text-align: center; /* Center tooltip text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding */
+    position: absolute; /* Position tooltip */
+    z-index: 1; /* Show above other elements */
+    bottom: 125%; /* Position tooltip above link */
+    left: 50%; /* Center tooltip */
+    margin-left: -60px; /* Adjust position */
+    opacity: 0; /* Hide tooltip */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+.hover-link:hover + .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade in tooltip */
+}
+
 </style>
 
 
