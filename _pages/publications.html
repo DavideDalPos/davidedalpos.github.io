@@ -19,7 +19,7 @@ author_profile: true
   }
 
   .hover-link {
-    color: #9c6161; /* Lighter black */
+    color: #88c0aa; /* Lighter black */
     text-decoration: none !important; /* Remove underline */
     transition: text-shadow 0.3s ease; /* Smooth transition for the shadow effect */
     cursor: pointer; /* Change cursor to pointer */
@@ -30,25 +30,32 @@ author_profile: true
 }
 
 .tooltip {
-    visibility: hidden; /* Hide tooltip by default */
-    width: 120px; /* Set tooltip width */
-    background-color: #555; /* Tooltip background color */
-    color: #fff; /* Tooltip text color */
-    text-align: center; /* Center tooltip text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding */
-    position: absolute; /* Position tooltip */
-    z-index: 1; /* Show above other elements */
-    bottom: 125%; /* Position tooltip above link */
-    left: 50%; /* Center tooltip */
-    margin-left: -60px; /* Adjust position */
-    opacity: 0; /* Hide tooltip */
-    transition: opacity 0.3s; /* Smooth transition */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.hover-link:hover + .tooltip {
-    visibility: visible; /* Show tooltip on hover */
-    opacity: 1; /* Fade in tooltip */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px; /* Adjust width as needed */
+    background-color: rgba(0, 0, 0, 0.75); /* Slightly transparent black */
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px; /* Add some padding */
+    position: absolute;
+    z-index: 1;
+    bottom: 150%; /* Position it above the link */
+    left: 50%;
+    margin-left: -60px; /* Center the tooltip */
+    font-size: 10px; /* Smaller font size */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 </style>
@@ -67,14 +74,12 @@ author_profile: true
       <p><div class='altmetric-embed' data-badge-type='donut' data-doi="10.1371/journal.pone.0311365" style="float: right"></div></p>
       <li style="margin-right: 80px; text-align: justify">
         <div style="flex-grow: 1; display: flex; flex-direction: column;">
-          <div style="position: relative; display: inline-block;">
+          <div class="tooltip">
             <b>Dal Pos, D.</b> and Sharanowski, B. J. (2024) 
-            <a href="/2024-dalpos/" target="_blank" class="hover-link" title="Hover for more information!">
-                A host driven parasitoid syndrome: Convergent evolution of multiple traits associated with woodboring hosts in Ichneumonidae (Hymenoptera, Ichneumonoidea).
-            </a>
-            <span class="tooltip">Click to read more!</span>
+            <a href="/2024-dalpos/" target="_blank" style="text-decoration: none;">A host driven parasitoid syndrome: Convergent evolution of multiple traits associated with woodboring hosts in Ichneumonidae (Hymenoptera, Ichneumonoidea).</a>
             <i>PlosOne</i> 19(9): e0311365.
-        </div>
+            <span class="tooltiptext">Click to view more</span>
+          </div>
           <span style="margin-top: 0.5px;">
             <a href="https://doi.org/10.1371/journal.pone.0311365" target="_blank">https://doi.org/10.1371/journal.pone.0311365</a>
             <a href="pdfs/Dal_Pos-2024-Plos.pdf" target="_blank" style="text-decoration: none;">
