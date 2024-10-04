@@ -87,7 +87,54 @@ redirect_from:
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
 }
+
+.v-card {
+    background-color: #f0f4f8; /* Light grey with a hint of blue */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    margin: 20px auto; /* Center card on page */
+    width: 90%; /* Take up 90% of the page width */
+    max-width: 1200px; /* Increase the max width */
+    font-family: Arial, sans-serif;
+}
+
+.v-card-small {
+    background-color: #f0f4f8; /* Light grey with a hint of blue */
+    border-radius: 10px;
+    padding: 10px 15px; /* Smaller padding for compact look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    margin: 10px auto; /* Adjust margin */
+    width: 50%; /* Smaller width */
+    max-width: 400px; /* Limit max width */
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center the text */
+}
+
+.v-card-small a {
+    text-decoration: none;
+    color: #007BFF; /* Standard link color */
+    font-weight: bold;
+}
+
+.v-card-small a:hover {
+    color: #0056b3; /* Darker hover color */
+}
+
 </style>
+
+
+<div class="v-card-small">
+  <a href="your-cv-link.pdf" download>Download my CV</a>
+</div>
+
+<div class="v-card">
+  <!-- Your existing card content -->
+</div>
+
+<div class="v-card">
+  <!-- Your existing card content -->
+</div>
 
 <!-- V-Cards Container -->
 <div class="v-cards">
