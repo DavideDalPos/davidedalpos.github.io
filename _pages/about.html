@@ -45,39 +45,27 @@ redirect_from:
 .v-card li {
   margin: 20px 0; /* Space between each education item */
   position: relative;
-  padding-left: 30px; /* Space for the year */
+  padding-left: 30px; /* Space for the timeline dot */
 }
 
 .v-card li::before {
   content: '';
   position: absolute;
-  left: 12px; /* Position line */
-  top: 0; /* Start from the top */
-  width: 2px; /* Line width */
-  height: 100%; /* Full height */
-  background-color: #ccc; /* Line color */
-  z-index: -1; /* Behind the list items */
+  left: 10px; /* Position dot on the left */
+  top: 12px; /* Center the dot vertically */
+  width: 8px; /* Dot size */
+  height: 8px; /* Dot size */
+  border-radius: 50%; /* Round dot */
+  background-color: #aaa; /* Greyed out dot color */
 }
 
 .year {
-  display: block; /* Ensures the year takes up space */
+  display: inline-block; /* Ensures the year is inline */
   position: absolute;
-  left: -20px; /* Positioning the year beside the line */
+  left: 60px; /* Positioning the year to the right of the dot */
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
-  top: 10px; /* Align with the top of the line */
-  text-align: center; /* Center the year text */
-}
-
-.v-card li::after {
-  content: '';
-  position: absolute;
-  left: 12px; /* Same position as before for the line */
-  top: 20px; /* Position below the year */
-  width: 2px; /* Line width */
-  height: calc(100% - 20px); /* Full height minus space for year */
-  background-color: #ccc; /* Line color */
-  z-index: -1; /* Behind the list items */
+  top: 8px; /* Align with the center of the dot */
 }
 </style>
 
