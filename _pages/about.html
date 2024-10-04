@@ -16,9 +16,53 @@ redirect_from:
   h1 {
     text-align: center;
   }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Space between text and vCards */
+  }
+
+  .vcard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 40%; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+
+  .vcard h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Space between heading and content */
+  }
 </style>
 
-<h1 class="underlined-heading">About me</h1>
+<h1 class="underlined-heading">About Me</h1>
+<p style="text-align: center;">Welcome to my about me page! Here you can learn more about my interests and education history.</p>
+
+<div class="container">
+  <div class="vcard">
+    <h2>Interests</h2>
+    <ul>
+      <li>Interest 1</li>
+      <li>Interest 2</li>
+      <li>Interest 3</li>
+      <li>Interest 4</li>
+      <li>Interest 5</li>
+    </ul>
+  </div>
+
+  <div class="vcard">
+    <h2>Education History</h2>
+    <ul>
+      <li>Degree, Institution (Year)</li>
+      <li>Degree, Institution (Year)</li>
+      <li>Degree, Institution (Year)</li>
+    </ul>
+  </div>
+</div>
+
 
 
 <p>
