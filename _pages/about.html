@@ -55,7 +55,7 @@ redirect_from:
   top: 10px; /* Center the dot vertically */
   width: 10px; /* Size of the dot */
   height: 10px; /* Size of the dot */
-  background-color: #007bff; /* Dot color */
+  background-color: #aaa; /* Greyed out dot color */
   border-radius: 50%; /* Make it round */
 }
 
@@ -67,6 +67,13 @@ redirect_from:
   height: 100%; /* Full height */
   background-color: #ccc; /* Line color */
   z-index: -1; /* Behind the list items */
+}
+
+.year {
+  position: absolute;
+  left: -45px; /* Positioning the year to the left of the dot */
+  font-size: 0.9em; /* Adjust font size as needed */
+  color: #555; /* Darker grey for year text */
 }
 </style>
 
@@ -85,9 +92,9 @@ redirect_from:
     <h2><i class="fas fa-graduation-cap"></i> Education</h2> <!-- Graduation cap icon for education -->
     <ul>
       <div class="timeline-line"></div> <!-- Vertical line -->
-      <li><i class="fas fa-book-open"></i> Ph.D. in Integrative and Conservation Biology - UCF <span>(2024)</span></li>
-      <li><i class="fas fa-book-open"></i> M.Sc. in Biology - [Your University] <span>(2020)</span></li>
-      <li><i class="fas fa-book-open"></i> B.Sc. in Environmental Science - [Your University] <span>(2018)</span></li>
+      <li><i class="fas fa-book-open"></i> Ph.D. in Integrative and Conservation Biology - UCF <span class="year">(2024)</span></li>
+      <li><i class="fas fa-book-open"></i> M.Sc. in Biology - [Your University] <span class="year">(2020)</span></li>
+      <li><i class="fas fa-book-open"></i> B.Sc. in Environmental Science - [Your University] <span class="year">(2018)</span></li>
     </ul>
   </div>
 </div>
