@@ -59,16 +59,15 @@ redirect_from:
 }
 
 /* Keep dots for education */
-.education li::before {
-  content: '\f19d'; /* Font Awesome graduation icon */
-  font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
-  font-weight: 900; /* Solid style */
-  position: absolute;
-  left: 0; /* Position icon on the left */
-  top: 50%; /* Center the icon vertically */
-  transform: translateY(-50%); /* Center icon vertically */
-  font-size: 1em; /* Size of the icon */
-  color: #000000; /* Icon color */
+.education li:not(:last-child)::after { /* Add line only to items that are not the last */
+  content: ''; /* Create an empty element */
+  position: absolute; /* Position it absolutely */
+  left: 10px; /* Position line slightly to the left */
+  top: 15px; /* Adjust as needed to center between items */
+  width: 2px; /* Line width */
+  height: calc(100% + 10px); /* Full height of the item, plus some extra space */
+  background-color: #ccc; /* Line color */
+  z-index: -1; /* Behind the list items */
 }
 
 .timeline-line {
