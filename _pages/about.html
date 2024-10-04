@@ -12,69 +12,68 @@ redirect_from:
 <style>
 .v-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Adjust spacing as needed */
   margin-top: 20px;
 }
 
 .v-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 15px;
-  width: 45%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #ccc; /* Border for v-cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the card */
+  width: 45%; /* Adjust width as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition effect for hover */
 }
 
 .v-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border-color: #007bff;
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  border-color: #007bff; /* Change border color on hover */
 }
 
 .v-card h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 1.5em; /* Adjust header size */
+  margin-bottom: 10px; /* Spacing below header */
 }
 
 .v-card ul {
-  list-style: none;
-  padding: 0;
-  position: relative;
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  position: relative; /* Allow positioning of timeline */
 }
 
 .v-card li {
-  margin: 30px 0; /* Space between each education item */
-  position: relative;
-  padding-left: 50px; /* Space for the timeline dot */
+  margin: 20px 0; /* Spacing between list items */
+  position: relative; /* Allow positioning of timeline dot */
+  padding-left: 30px; /* Space for the timeline dot */
 }
 
 .v-card li::before {
   content: '';
   position: absolute;
-  left: 15px; /* Position dot on the left */
+  left: 0; /* Position dot on the left */
   top: 10px; /* Center the dot vertically */
-  width: 10px; /* Dot size */
-  height: 10px; /* Dot size */
-  border-radius: 50%; /* Round dot */
+  width: 10px; /* Size of the dot */
+  height: 10px; /* Size of the dot */
   background-color: #aaa; /* Greyed out dot color */
-}
-
-.year {
-  position: absolute;
-  left: 30px; /* Positioning the year to the right of the dot */
-  font-size: 0.9em; /* Adjust font size as needed */
-  color: #555; /* Darker grey for year text */
-  top: 15px; /* Align with the center of the dot */
+  border-radius: 50%; /* Make it round */
 }
 
 .timeline-line {
   position: absolute;
-  left: 15px; /* Align with dot */
-  top: 20px; /* Start below the dot */
+  left: 5px; /* Position line slightly to the left */
+  top: 0; /* Start from the top */
   width: 2px; /* Line width */
   height: 100%; /* Full height */
   background-color: #ccc; /* Line color */
   z-index: -1; /* Behind the list items */
+}
+
+.year {
+  position: absolute;
+  left: -45px; /* Positioning the year to the left of the dot */
+  font-size: 0.9em; /* Adjust font size as needed */
+  color: #555; /* Darker grey for year text */
 }
 </style>
 
@@ -92,21 +91,10 @@ redirect_from:
   <div class="v-card">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2> <!-- Graduation cap icon for education -->
     <ul>
-      <li>
-        <span class="year">2025</span> 
-        Ph.D. in Integrative and Conservation Biology - University of Central Florida (UCF)
-        <div class="timeline-line"></div> <!-- Vertical line -->
-      </li>
-      <li>
-        <span class="year">2016</span> 
-        M.Sc. in Natural Sciences - University of Padua
-        <div class="timeline-line"></div> <!-- Vertical line -->
-      </li>
-      <li>
-        <span class="year">2013</span> 
-        B.Sc. in Natural Sciences - University of Pavia
-        <div class="timeline-line"></div> <!-- Vertical line -->
-      </li>
+      <div class="timeline-line"></div> <!-- Vertical line -->
+      <li><i class="fas fa-book-open"></i> Ph.D. in Integrative and Conservation Biology - UCF <span class="year">(2024)</span></li>
+      <li><i class="fas fa-book-open"></i> M.Sc. in Biology - [Your University] <span class="year">(2020)</span></li>
+      <li><i class="fas fa-book-open"></i> B.Sc. in Environmental Science - [Your University] <span class="year">(2018)</span></li>
     </ul>
   </div>
 </div>
