@@ -43,7 +43,7 @@ redirect_from:
 }
 
 .v-card li {
-  margin: 40px 0; /* Added spacing to accommodate the year */
+  margin: 20px 0; /* Space between each education item */
   position: relative;
   padding-left: 30px; /* Space for the year */
 }
@@ -67,6 +67,17 @@ redirect_from:
   color: #555; /* Darker grey for year text */
   top: 10px; /* Align with the top of the line */
   text-align: center; /* Center the year text */
+}
+
+.v-card li::after {
+  content: '';
+  position: absolute;
+  left: 12px; /* Same position as before for the line */
+  top: 20px; /* Position below the year */
+  width: 2px; /* Line width */
+  height: calc(100% - 20px); /* Full height minus space for year */
+  background-color: #ccc; /* Line color */
+  z-index: -1; /* Behind the list items */
 }
 </style>
 
