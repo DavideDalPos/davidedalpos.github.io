@@ -48,6 +48,11 @@ redirect_from:
   padding-left: 30px; /* Space for the timeline dot */
 }
 
+/* Remove dots for interests */
+.interests li::before {
+  content: none; /* Remove the dot */
+}
+
 .v-card li::before {
   content: '';
   position: absolute;
@@ -81,7 +86,7 @@ redirect_from:
 <div class="v-cards">
   <div class="v-card">
     <h2><i class="fas fa-leaf"></i> Interests</h2> <!-- Leaf icon for interests -->
-    <ul>
+    <ul class="interests"> <!-- Add a class to differentiate interests -->
       <li><i class="fas fa-check-circle"></i> Evolutionary Biology</li>
       <li><i class="fas fa-check-circle"></i> Conservation</li>
       <li><i class="fas fa-check-circle"></i> Entomology</li>
