@@ -7,62 +7,75 @@ redirect_from:
   - /about.html
 ---
 <style>
-.v-cards {
-  display: flex;
-  justify-content: space-around; /* Adjust spacing as needed */
-  margin-top: 20px;
-}
-
-.v-card {
-  border: 1px solid #ccc; /* Border for v-cards */
-  border-radius: 8px; /* Rounded corners */
-  padding: 15px; /* Padding inside the card */
-  width: 45%; /* Adjust width as needed */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.v-card h2 {
-  font-size: 1.5em; /* Adjust header size */
-  margin-bottom: 10px; /* Spacing below header */
-}
-
-.v-card ul {
-  list-style: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-}
-
-.v-card li {
-  margin: 5px 0; /* Spacing between list items */
-}
-</style>
-
-    <!-- Intro Text -->
-    <div class="intro-text">
-      <p>Welcome to my archive! Here you can find information about my interests and educational background.</p>
+  .v-cards {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing as needed */
+    margin-top: 20px;
+  }
+  
+  .v-card {
+    border: 1px solid #ccc; /* Border for v-cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    width: 45%; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .v-card h2 {
+    font-size: 1.5em; /* Adjust header size */
+    margin-bottom: 10px; /* Spacing below header */
+  }
+  
+  .v-card ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+  }
+  
+  .v-card li {
+    margin: 5px 0; /* Spacing between list items */
+  }
+  
+  /* Simple CSS Icon Styles */
+  .icon-interest, .icon-education {
+    display: inline-block;
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+  }
+  
+  .icon-interest {
+    background-color: #4caf50; /* Green for interests */
+    clip-path: circle(); /* Circle shape */
+  }
+  
+  .icon-education {
+    background-color: #2196F3; /* Blue for education */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Square shape */
+  }
+  </style>
+  
+  <div class="intro-text">
+    <p>Welcome to my archive! Here you can find information about my interests and educational background.</p>
+  </div>
+  
+  <div class="v-cards">
+    <div class="v-card">
+      <h2><span class="icon-interest"></span> Interests</h2>
+      <ul>
+        <li>Evolutionary Biology</li>
+        <li>Conservation</li>
+        <li>Entomology</li>
+        <li>Research Methodologies</li>
+      </ul>
     </div>
-
-    <!-- V-Cards Container -->
-    <div class="v-cards">
-      <div class="v-card">
-        <h2><i class="icon-interest"></i> Interests</h2>
-        <ul>
-          <li>Evolutionary Biology</li>
-          <li>Conservation</li>
-          <li>Entomology</li>
-          <li>Research Methodologies</li>
-        </ul>
-      </div>
-      <div class="v-card">
-        <h2><i class="icon-education"></i> Education</h2>
-        <ul>
-          <li>Ph.D. in Integrative and Conservation Biology - UCF</li>
-          <li>M.Sc. in Biology - [Your University]</li>
-          <li>B.Sc. in Environmental Science - [Your University]</li>
-        </ul>
-      </div>
+    <div class="v-card">
+      <h2><span class="icon-education"></span> Education</h2>
+      <ul>
+        <li>Ph.D. in Integrative and Conservation Biology - UCF</li>
+        <li>M.Sc. in Biology - [Your University]</li>
+        <li>B.Sc. in Environmental Science - [Your University]</li>
+      </ul>
     </div>
   </div>
-</div>
-
-
-
+  
