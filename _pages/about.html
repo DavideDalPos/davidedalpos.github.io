@@ -9,45 +9,58 @@ redirect_from:
 
 <!-- Include Font Awesome CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/light.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/thin.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/duotone.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/sharp.min.css">
 
 <style>
 .v-cards {
   display: flex;
-  justify-content: space-around; /* Adjust spacing as needed */
+  justify-content: space-around; /* Adjusts spacing of cards */
   margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
 .v-card {
-    background-color: #f0f4f8; /* Light grey with a hint of blue */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
-    margin: 20px auto; /* Center card on page */
-    width: 90%; /* Take up 90% of the page width */
-    max-width: 1200px; /* Limit the max width */
-    font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 45%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.v-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
 }
 
 .v-card-small {
-    background-color: #f0f4f8; /* Same color as the regular card */
-    border-radius: 10px;
-    padding: 10px 20px; /* Smaller padding */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Same shadow effect */
-    margin: 10px auto; /* Slightly smaller margin */
-    width: 50%; /* Make this card narrower */
-    max-width: 400px; /* Smaller max width */
-    text-align: center; /* Center the text inside */
+  width: 30%; /* Smaller width for the CV download card */
+  align-self: flex-start; /* Align this card at the top */
+  text-align: center; /* Center the content inside the card */
 }
 
-.v-card-small a {
-    text-decoration: none;
-    color: #007BFF; /* Link color */
-    font-weight: bold;
+.v-card-small h2 {
+  font-size: 1.2em; /* Smaller header size */
 }
 
-.v-card-small a:hover {
-    color: #0056b3; /* Darker hover color */
+.cv-download {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
 }
+
+.cv-download:hover {
+  background-color: #0056b3;
+}
+
 
 .v-card h2 {
   font-size: 1.5em; /* Adjust header size */
@@ -103,9 +116,10 @@ redirect_from:
 
 
 </style>
-
-<div class="v-card-small">
-  <a href="your-cv-link.pdf" download>Download my CV</a>
+<!-- New smaller v-card for CV download -->
+<div class="v-card v-card-small">
+  <h2><i class="fas fa-file-alt"></i> Download CV</h2>
+  <a href="your-cv-link.pdf" download class="cv-download"><i class="fas fa-download"></i> Click here to download</a>
 </div>
 
 
