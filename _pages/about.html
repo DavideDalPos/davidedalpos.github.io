@@ -9,10 +9,6 @@ redirect_from:
 
 <!-- Include Font Awesome CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/light.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/thin.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/duotone.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/sharp.min.css">
 
 <style>
 .v-cards {
@@ -22,18 +18,35 @@ redirect_from:
 }
 
 .v-card {
-  border: 1px solid #ccc; /* Border for v-cards */
-  border-radius: 8px; /* Rounded corners */
-  padding: 15px; /* Padding inside the card */
-  width: 45%; /* Adjust width as needed */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.2s, box-shadow 0.2s; /* Transition effect for hover */
+    background-color: #f0f4f8; /* Light grey with a hint of blue */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    margin: 20px auto; /* Center card on page */
+    width: 90%; /* Take up 90% of the page width */
+    max-width: 1200px; /* Limit the max width */
+    font-family: Arial, sans-serif;
 }
 
-.v-card:hover {
-  transform: scale(1.05); /* Slightly increase size on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-  border-color: #007bff; /* Change border color on hover */
+.v-card-small {
+    background-color: #f0f4f8; /* Same color as the regular card */
+    border-radius: 10px;
+    padding: 10px 20px; /* Smaller padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Same shadow effect */
+    margin: 10px auto; /* Slightly smaller margin */
+    width: 50%; /* Make this card narrower */
+    max-width: 400px; /* Smaller max width */
+    text-align: center; /* Center the text inside */
+}
+
+.v-card-small a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+    font-weight: bold;
+}
+
+.v-card-small a:hover {
+    color: #0056b3; /* Darker hover color */
 }
 
 .v-card h2 {
@@ -88,53 +101,13 @@ redirect_from:
   color: #555; /* Darker grey for year text */
 }
 
-.v-card {
-    background-color: #f0f4f8; /* Light grey with a hint of blue */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
-    margin: 20px auto; /* Center card on page */
-    width: 90%; /* Take up 90% of the page width */
-    max-width: 1200px; /* Increase the max width */
-    font-family: Arial, sans-serif;
-}
-
-.v-card-small {
-    background-color: #f0f4f8; /* Light grey with a hint of blue */
-    border-radius: 10px;
-    padding: 10px 15px; /* Smaller padding for compact look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow */
-    margin: 10px auto; /* Adjust margin */
-    width: 50%; /* Smaller width */
-    max-width: 400px; /* Limit max width */
-    font-family: Arial, sans-serif;
-    text-align: center; /* Center the text */
-}
-
-.v-card-small a {
-    text-decoration: none;
-    color: #007BFF; /* Standard link color */
-    font-weight: bold;
-}
-
-.v-card-small a:hover {
-    color: #0056b3; /* Darker hover color */
-}
 
 </style>
-
 
 <div class="v-card-small">
   <a href="your-cv-link.pdf" download>Download my CV</a>
 </div>
 
-<div class="v-card">
-  <!-- Your existing card content -->
-</div>
-
-<div class="v-card">
-  <!-- Your existing card content -->
-</div>
 
 <!-- V-Cards Container -->
 <div class="v-cards">
