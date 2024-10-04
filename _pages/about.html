@@ -9,24 +9,56 @@ redirect_from:
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<style>
+.v-cards {
+  display: flex;
+  justify-content: space-around; /* Adjust spacing as needed */
+  margin-top: 20px;
+}
+
+.v-card {
+  border: 1px solid #ccc; /* Border for v-cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the card */
+  width: 45%; /* Adjust width as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.v-card h2 {
+  font-size: 1.5em; /* Adjust header size */
+  margin-bottom: 10px; /* Spacing below header */
+}
+
+.v-card ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.v-card li {
+  margin: 5px 0; /* Spacing between list items */
+}
+</style>
+
+<!-- V-Cards Container -->
 <div class="v-cards">
   <div class="v-card">
     <h2><i class="fas fa-leaf"></i> Interests</h2> <!-- Leaf icon for interests -->
     <ul>
-      <li>Evolutionary Biology</li>
-      <li>Conservation</li>
-      <li>Entomology</li>
-      <li>Research Methodologies</li>
+      <li><i class="fas fa-check-circle"></i> Evolutionary Biology</li>
+      <li><i class="fas fa-check-circle"></i> Conservation</li>
+      <li><i class="fas fa-check-circle"></i> Entomology</li>
+      <li><i class="fas fa-check-circle"></i> Research Methodologies</li>
     </ul>
   </div>
   <div class="v-card">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2> <!-- Graduation cap icon for education -->
     <ul>
-      <li>Ph.D. in Integrative and Conservation Biology - UCF</li>
-      <li>M.Sc. in Biology - [Your University]</li>
-      <li>B.Sc. in Environmental Science - [Your University]</li>
+      <li><i class="fas fa-book-open"></i> Ph.D. in Integrative and Conservation Biology - UCF</li>
+      <li><i class="fas fa-book-open"></i> M.Sc. in Biology - [Your University]</li>
+      <li><i class="fas fa-book-open"></i> B.Sc. in Environmental Science - [Your University]</li>
     </ul>
   </div>
 </div>
+
 
   
