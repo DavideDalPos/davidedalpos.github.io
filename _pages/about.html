@@ -7,58 +7,125 @@ redirect_from:
 ---
 
 <style>
-  .underlined-heading {
-    text-decoration: underline;
-    font-family: Arial, sans-serif; /* Optional: change font if desired */
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for the entire page */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
   }
 
-  /* Add a rule to center the h1 */
-  h1 {
+  .header {
     text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .underlined-heading {
+    text-decoration: underline;
+    font-size: 2.5em; /* Increased font size for emphasis */
+    color: #333; /* Darker text for better contrast */
+  }
+
+  p.introduction {
+    font-size: 1.2em; /* Slightly larger text for the intro */
+    color: #666; /* A softer color for the introduction text */
+    max-width: 800px;
+    margin: 0 auto; /* Center the intro text */
   }
 
   .container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px; /* Space between text and vCards */
+    justify-content: space-around; /* Space between the vCards */
+    margin-top: 40px; /* Space between text and vCards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
   }
 
   .vcard {
+    background-color: #fff; /* White background for contrast */
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    width: 40%; /* Adjust width as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 45%; /* Adjust width for better layout */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+  }
+
+  .vcard:hover {
+    transform: translateY(-5px); /* Raise on hover */
   }
 
   .vcard h2 {
-    text-align: center;
-    margin-bottom: 10px; /* Space between heading and content */
+    text-align: left; /* Align title to the left */
+    margin-bottom: 15px; /* Space between heading and content */
+    color: #333; /* Darker color for titles */
+  }
+
+  ul {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+  }
+
+  li {
+    padding: 10px 0; /* Space between list items */
+    font-size: 1em; /* Consistent font size for list items */
+    position: relative; /* Position for icon placement */
+  }
+
+  li i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #333; /* Change icon color to match heading */
+    vertical-align: middle; /* Align icons with text */
+  }
+
+  .education-item {
+    margin-left: 25px; /* Indent for universities */
+    font-size: 0.9em; /* Smaller font size for universities */
+    color: #666; /* Lighter color for university names */
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack the cards on smaller screens */
+      align-items: center; /* Center the cards */
+    }
+
+    .vcard {
+      width: 90%; /* Full width for smaller screens */
+      margin-bottom: 20px; /* Space between stacked cards */
+    }
   }
 </style>
 
-<h1 class="underlined-heading">About Me</h1>
-<p style="text-align: center;">Welcome to my about me page! Here you can learn more about my interests and education history.</p>
+<div class="header">
+  <h1 class="underlined-heading">About Me</h1>
+  <p class="introduction">Hi there! I'm [Your Name], a passionate [Your Profession] with interests in [Your Interests]. Here, you'll find a bit about my journey and what drives me.</p>
+</div>
 
 <div class="container">
   <div class="vcard">
     <h2>Interests</h2>
     <ul>
-      <li>Interest 1</li>
-      <li>Interest 2</li>
-      <li>Interest 3</li>
-      <li>Interest 4</li>
-      <li>Interest 5</li>
+      <li><i class="fas fa-brain"></i>Comparative Anatomy</li>
+      <li><i class="fas fa-paw"></i>Collection Management</li>
+      <li><i class="fas fa-database"></i>Databasing</li>
+      <li><i class="fas fa-bug"></i>Entomology</li>
+      <li><i class="fas fa-leaf"></i>Evolutionary Morphology</li>
     </ul>
   </div>
 
   <div class="vcard">
     <h2>Education History</h2>
     <ul>
-      <li>Degree, Institution (Year)</li>
-      <li>Degree, Institution (Year)</li>
-      <li>Degree, Institution (Year)</li>
+      <li><i class="fas fa-graduation-cap"></i>Ph.D. in Integrative Biology
+        <div class="education-item">University of Central Florida (On going)</div>
+      </li>
+      <li><i class="fas fa-graduation-cap"></i>MSc in Natural Sciences
+        <div class="education-item">University of Padua (2016)</div>
+      </li>
+      <li><i class="fas fa-graduation-cap"></i>BSc in Sciences for the Nature and the Environment
+        <div class="education-item">University of Pavia (2013)</div>
+      </li>
     </ul>
   </div>
 </div>
