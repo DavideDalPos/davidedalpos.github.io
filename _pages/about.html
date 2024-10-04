@@ -43,25 +43,15 @@ redirect_from:
 }
 
 .v-card li {
-  margin: 20px 0;
+  margin: 40px 0; /* Added spacing to accommodate the year */
   position: relative;
-  padding-left: 30px; /* Space for the timeline dot */
+  padding-left: 30px; /* Space for the year */
 }
 
 .v-card li::before {
   content: '';
   position: absolute;
-  left: 5px; /* Position dot on the left */
-  top: 10px; /* Center the dot vertically */
-  width: 4px; /* Smaller dot size */
-  height: 4px; /* Smaller dot size */
-  border-radius: 50%; /* Round dot */
-  background-color: rgba(170, 170, 170, 0.5); /* Greyed out and transparent */
-}
-
-.timeline-line {
-  position: absolute;
-  left: 7px; /* Position line slightly to the left */
+  left: 12px; /* Position line */
   top: 0; /* Start from the top */
   width: 2px; /* Line width */
   height: 100%; /* Full height */
@@ -72,16 +62,11 @@ redirect_from:
 .year {
   display: block; /* Ensures the year takes up space */
   position: absolute;
-  left: -20px; /* Positioning the year beside the dot */
+  left: -20px; /* Positioning the year beside the line */
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
-  top: 10px; /* Align with the dot vertically */
+  top: 10px; /* Align with the top of the line */
   text-align: center; /* Center the year text */
-}
-
-.timeline-item {
-  position: relative;
-  padding-bottom: 10px; /* Spacing below the item */
 }
 </style>
 
@@ -99,20 +84,18 @@ redirect_from:
   <div class="v-card">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2> <!-- Graduation cap icon for education -->
     <ul>
-      <div class="timeline-line"></div> <!-- Vertical line -->
-      <li class="timeline-item">
+      <li>
         <span class="year">2025</span> 
         Ph.D. in Integrative and Conservation Biology - University of Central Florida (UCF)
       </li>
-      <li class="timeline-item">
+      <li>
         <span class="year">2016</span> 
         M.Sc. in Natural Sciences - University of Padua
       </li>
-      <li class="timeline-item">
+      <li>
         <span class="year">2013</span> 
         B.Sc. in Natural Sciences - University of Pavia
       </li>
     </ul>
   </div>
 </div>
-
