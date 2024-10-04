@@ -22,6 +22,13 @@ redirect_from:
   padding: 15px; /* Padding inside the card */
   width: 45%; /* Adjust width as needed */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition effect for hover */
+}
+
+.v-card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  border-color: #007bff; /* Change border color on hover */
 }
 
 .v-card h2 {
@@ -59,6 +66,3 @@ redirect_from:
     </ul>
   </div>
 </div>
-
-
-  
