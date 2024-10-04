@@ -43,29 +43,38 @@ redirect_from:
 }
 
 .v-card li {
-  margin: 20px 0; /* Space between each education item */
+  margin: 30px 0; /* Space between each education item */
   position: relative;
-  padding-left: 30px; /* Space for the timeline dot */
+  padding-left: 50px; /* Space for the timeline dot */
 }
 
 .v-card li::before {
   content: '';
   position: absolute;
-  left: 10px; /* Position dot on the left */
-  top: 12px; /* Center the dot vertically */
-  width: 8px; /* Dot size */
-  height: 8px; /* Dot size */
+  left: 15px; /* Position dot on the left */
+  top: 10px; /* Center the dot vertically */
+  width: 10px; /* Dot size */
+  height: 10px; /* Dot size */
   border-radius: 50%; /* Round dot */
   background-color: #aaa; /* Greyed out dot color */
 }
 
 .year {
-  display: inline-block; /* Ensures the year is inline */
   position: absolute;
-  left: 60px; /* Positioning the year to the right of the dot */
+  left: 30px; /* Positioning the year to the right of the dot */
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
-  top: 8px; /* Align with the center of the dot */
+  top: 15px; /* Align with the center of the dot */
+}
+
+.timeline-line {
+  position: absolute;
+  left: 15px; /* Align with dot */
+  top: 20px; /* Start below the dot */
+  width: 2px; /* Line width */
+  height: 100%; /* Full height */
+  background-color: #ccc; /* Line color */
+  z-index: -1; /* Behind the list items */
 }
 </style>
 
@@ -86,14 +95,17 @@ redirect_from:
       <li>
         <span class="year">2025</span> 
         Ph.D. in Integrative and Conservation Biology - University of Central Florida (UCF)
+        <div class="timeline-line"></div> <!-- Vertical line -->
       </li>
       <li>
         <span class="year">2016</span> 
         M.Sc. in Natural Sciences - University of Padua
+        <div class="timeline-line"></div> <!-- Vertical line -->
       </li>
       <li>
         <span class="year">2013</span> 
         B.Sc. in Natural Sciences - University of Pavia
+        <div class="timeline-line"></div> <!-- Vertical line -->
       </li>
     </ul>
   </div>
