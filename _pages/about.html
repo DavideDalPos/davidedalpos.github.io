@@ -58,7 +58,11 @@ redirect_from:
   content: none; /* Remove the dot for interests */
 }
 
-/* Keep dots for education */
+.education li {
+  position: relative; /* Allow positioning for timeline line */
+  padding-left: 30px; /* Space for the timeline dot */
+}
+
 .education li:not(:last-child)::after { /* Add line only to items that are not the last */
   content: ''; /* Create an empty element */
   position: absolute; /* Position it absolutely */
@@ -69,6 +73,7 @@ redirect_from:
   background-color: #ccc; /* Line color */
   z-index: -1; /* Behind the list items */
 }
+
 
 .timeline-line {
   position: absolute;
