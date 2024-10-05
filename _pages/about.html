@@ -106,7 +106,7 @@ redirect_from:
 .year {
   position: absolute;
   left: -30px; /* Position the year to the left */
-  top: 50%;
+  top: 50%; /* Center the year vertically */
   transform: translateY(-50%);
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
@@ -115,10 +115,10 @@ redirect_from:
 /* Line Styling */
 .line {
   position: absolute;
-  left: -5px; /* Position the line next to the year */
-  top: 50%; /* Align with the middle of the year */
-  height: 2px; /* Line thickness */
-  width: 20px; /* Length of the line */
+  left: -10px; /* Position the line next to the year */
+  top: 0; /* Start from the top of the list item */
+  height: 20px; /* Adjust height as needed */
+  width: 2px; /* Line thickness */
   background-color: #000; /* Line color */
   transform: translateY(-50%); /* Center the line vertically */
 }
@@ -127,16 +127,6 @@ redirect_from:
   height: calc(100% + 20px); /* Extend the line to connect to the next year */
 }
 
-/* Optional: Add hover effect for items */
-.education li:hover .line {
-  background-color: #007bff; /* Change color on hover */
-}
-
-
-/* Event Content */
-.event-content {
-  margin-left: 10px; /* Add space between the dot and the text */
-}
 
 
 /* About Me Section */
