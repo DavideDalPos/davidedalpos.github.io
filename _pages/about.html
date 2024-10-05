@@ -116,11 +116,12 @@ redirect_from:
 .line {
   position: absolute;
   left: -15px; /* Position the line next to the year */
-  top: 1000px; /* Start from the top of the current list item */
-  height: 20px; /* Line height, adjust as needed */
+  top: 20px; /* Adjust this value to move the line down */
+  height: 30px; /* Height to extend down to the next item */
   width: 2px; /* Line thickness */
   background-color: #000; /* Line color */
 }
+
 
 /* Positioning lines between items */
 .education li:not(:last-child) .line {
