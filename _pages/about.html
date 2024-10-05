@@ -93,7 +93,7 @@ redirect_from:
 .education {
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
-  position: relative; /* Positioning for absolute children */
+  position: relative; /* For relative positioning */
 }
 
 .education li {
@@ -115,16 +115,22 @@ redirect_from:
 /* Line Styling */
 .line {
   position: absolute;
-  left: -10px; /* Position the line next to the year */
-  top: 0; /* Start from the top of the list item */
-  height: 20px; /* Adjust height as needed */
+  left: -15px; /* Position the line next to the year */
+  top: 0; /* Start from the top of the current list item */
+  height: 20px; /* Line height, adjust as needed */
   width: 2px; /* Line thickness */
   background-color: #000; /* Line color */
-  transform: translateY(-50%); /* Center the line vertically */
 }
 
+/* Positioning lines between items */
 .education li:not(:last-child) .line {
-  height: calc(100% + 20px); /* Extend the line to connect to the next year */
+  height: 30px; /* Height to extend down to the next item */
+  top: 100%; /* Position the line at the bottom of the current item */
+  transform: translateY(-50%); /* Center the line vertically relative to the bottom */
+}
+
+.education li:last-child .line {
+  display: none; /* Hide the line for the last item */
 }
 
 
@@ -171,28 +177,29 @@ redirect_from:
       <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li> <!-- Alternative for microscope -->
       <li><i class="fas fa-desktop"></i> Databasing</li> <!-- Alternative for computer -->
       <li><i class="fas fa-bug"></i> Entomology</li> <!-- Keep the bee icon -->
-      <li><i class="fa-solid fa-worm"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
+      <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
     </ul>
   </div>
-<!-- Card 2: Education Timeline -->
-<div class="v-card education">
-  <h2>Education</h2>
-  <ul class="education">
-    <li>
-      <div class="year">2024</div>
-      <span>Completed Ph.D.</span>
-    </li>
-    <div class="line"></div> <!-- Vertical line -->
-    <li>
-      <div class="year">2023</div>
-      <span>Published Research Paper</span>
-    </li>
-    <div class="line"></div> <!-- Vertical line -->
-    <li>
-      <div class="year">2022</div>
-      <span>Graduated with M.S.</span>
-    </li>
-    <!-- Add more list items as needed -->
-  </ul>
+  <!-- Card 2: Education Timeline -->
+  <div class="v-card education">
+    <h2>Education</h2>
+    <ul class="education">
+      <li>
+        <div class="year">2024</div>
+        <span>Completed Ph.D.</span>
+        <div class="line"></div> <!-- Line connecting 2024 to 2023 -->
+      </li>
+      <li>
+        <div class="year">2023</div>
+        <span>Published Research Paper</span>
+        <div class="line"></div> <!-- Line connecting 2023 to 2022 -->
+      </li>
+      <li>
+        <div class="year">2022</div>
+        <span>Graduated with M.S.</span>
+      </li>
+      <!-- Add more list items as needed -->
+    </ul>
+  </div>
 </div>
-</div>
+
