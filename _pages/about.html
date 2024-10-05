@@ -112,17 +112,19 @@ redirect_from:
   line-height: 1.6; /* Adjust line height for readability */
 }
 
+.degree {
+  display: block; /* Forces the degree to be on its own line */
+  font-weight: bold; /* Makes the degree bold */
+  color: #333; /* Dark text for contrast */
+}
+
 .university {
-  display: block; /* Makes it a block element to go below the M.S. text */
+  display: block; /* Forces the university name to a new line */
   color: #aaa; /* Light grey color */
   font-size: 0.9em; /* Slightly smaller font size */
   margin-top: 5px; /* Adds some space above the university name */
 }
 
-.university-container {
-  display: block; /* Ensures it takes a new line */
-  margin-top: 5px; /* Adds some space above the university name */
-}
 </style>
 
 <!-- About Me Section -->
@@ -158,8 +160,9 @@ redirect_from:
       <li><i class="fas fa-user-graduate"></i> Completed Ph.D.</li>
       <li><i class="fas fa-user-graduate"></i> Published Research Paper</li>
       <li>
-        <i class="fas fa-user-graduate"></i> Bs.C. in Natural Sciences 
-        <div class="university">University of Central Florida</div>
+        <i class="fas fa-user-graduate"></i>
+        <span class="degree">Bs.C. in Natural Sciences</span>
+        <span class="university">University of Central Florida</span>
       </li>
     </ul>
   </div>
