@@ -81,17 +81,29 @@ redirect_from:
   content: none; /* Remove the dot for interests */
 }
 
+.education {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  position: relative; /* Allow positioning of timeline */
+}
+
+.education li {
+  margin: 20px 0; /* Spacing between list items */
+  position: relative; /* Allow positioning of timeline dot */
+  padding-left: 40px; /* Space for the timeline dot */
+}
+
 /* Keep dots for education */
 .education li::before {
-  content: '\f19d'; /* Font Awesome graduation icon */
+  content: '\f0b1'; /* Font Awesome circle icon */
   font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
   font-weight: 900; /* Solid style */
   position: absolute;
-  left: 0; /* Position icon on the left */
+  left: 10px; /* Position icon on the left */
   top: 50%; /* Center the icon vertically */
   transform: translateY(-50%); /* Center icon vertically */
   font-size: 1em; /* Size of the icon */
-  color: #000000; /* Icon color */
+  color: #007bff; /* Icon color */
 }
 
 .timeline-line {
@@ -154,12 +166,11 @@ redirect_from:
     </ul>
   </div>
   <div class="v-card">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2> <!-- Graduation cap icon for education -->
-    <ul class="education"> <!-- Add a class to differentiate education -->
-      <div class="timeline-line"></div> <!-- Vertical line -->
-      <li> Ph.D. in Integrative and Conservation Biology - UCF <span class="year">(2024)</span></li>
-      <li> M.Sc. in Biology - [Your University] <span class="year">(2020)</span></li>
-      <li> B.Sc. in Environmental Science - [Your University] <span class="year">(2018)</span></li>
-    </ul>
-  </div>
-</div>
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <ul class="education">
+        <div class="timeline-line"></div>
+        <li>Ph.D. in Integrative and Conservation Biology - UCF <span class="year">(2024)</span></li>
+        <li>M.Sc. in Biology - [Your University] <span class="year">(2020)</span></li>
+        <li>B.Sc. in Environmental Science - [Your University] <span class="year">(2018)</span></li>
+      </ul>
+    </div>
