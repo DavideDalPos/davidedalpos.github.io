@@ -27,17 +27,38 @@ redirect_from:
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 15px; /* Ensures all content inside the card is padded */
-  width: calc(45% - 20px); /* Use calc to account for margins */
+  width: 45%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   margin-top: 20px; 
   position: relative; /* For child positioning */
+  display: flex; /* Flexbox for content alignment */
+  flex-direction: column; /* Column layout */
 }
 
-.v-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border-color: #007bff;
+/* Card Header Styling */
+.v-card h2 {
+  font-size: 1.5em; /* Adjust header size */
+  margin: 5px 0 10px; /* Reduced spacing above and below the title */
+}
+
+/* List Styling for Interests and Education */
+.v-card ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Individual List Items */
+.v-card li {
+  margin: 10px 0; /* Spacing between list items */
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+}
+
+/* Icons in List Items */
+.v-card li i {
+  margin-right: 10px; /* Spacing between icon and text */
 }
 
 /* CV Download Container */
@@ -65,74 +86,6 @@ redirect_from:
   background-color: #bdbdbd; /* Slightly darker grey on hover */
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
-}
-
-/* Card Header Styling */
-.v-card h2 {
-  font-size: 1.5em; /* Adjust header size */
-  margin: 0 0 10px; /* Reduced spacing above and below the title */
-}
-
-/* List Styling for Timeline */
-.v-card ul {
-  list-style: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  position: relative; /* Allow positioning of timeline */
-}
-
-.v-card li {
-  margin: 20px 0; /* Spacing between list items */
-  position: relative; /* Allow positioning of timeline dot */
-  padding-left: 30px; /* Space for the timeline dot */
-}
-
-/* Remove dots for interests */
-.interests li::before {
-  content: none; /* Remove the dot for interests */
-}
-
-/* Education timeline */
-.education {
-  list-style-type: none; /* Remove default list styling */
-  padding: 0; /* Remove padding */
-  position: relative; /* For relative positioning */
-  margin: 0; /* Remove margin to fit within the card */
-}
-
-/* Each education entry */
-.education li {
-  position: relative; /* For positioning of children */
-  padding-left: 30px; /* Space for the year */
-  margin-bottom: 20px; /* Space between timeline items */
-}
-
-/* Year Positioning */
-.year {
-  position: absolute;
-  left: 0; /* Position the year to the left */
-  top: 50%; /* Center the year vertically */
-  transform: translateY(-50%);
-  font-size: 0.9em; /* Adjust font size as needed */
-  color: #555; /* Darker grey for year text */
-}
-
-/* Line Styling */
-.line {
-  position: absolute;
-  left: 10px; /* Position the line next to the year */
-  top: 0; /* Adjust the top positioning to connect correctly */
-  height: 100%; /* Full height of the list item */
-  width: 2px; /* Line thickness */
-  background-color: #555; /* Line color */
-}
-
-/* Positioning lines between items */
-.education li:not(:last-child) .line {
-  top: 0; /* Start from the top of the item */
-}
-
-.education li:last-child .line {
-  display: none; /* Hide the line for the last item */
 }
 
 /* About Me Section */
@@ -171,31 +124,25 @@ redirect_from:
 <div class="v-cards">
   <div class="v-card">
     <h2><i class="fas fa-leaf"></i> Interests</h2> <!-- Leaf icon for interests -->
-    <ul class="interests">
+    <ul>
       <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li> <!-- Alternative for microscope -->
       <li><i class="fas fa-desktop"></i> Databasing</li> <!-- Alternative for computer -->
       <li><i class="fas fa-bug"></i> Entomology</li> <!-- Keep the bee icon -->
       <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
     </ul>
   </div>
-  
   <!-- Card 2: Education Timeline -->
   <div class="v-card education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <h2>Education</h2>
     <ul class="education">
       <li>
-        <div class="year">2024</div>
-        <span>Completed Ph.D.</span>
-        <div class="line"></div> <!-- Line connecting 2024 to 2023 -->
+        <i class="fas fa-graduation-cap"></i> Completed Ph.D. (2024)
       </li>
       <li>
-        <div class="year">2023</div>
-        <span>Published Research Paper</span>
-        <div class="line"></div> <!-- Line connecting 2023 to 2022 -->
+        <i class="fas fa-book"></i> Published Research Paper (2023)
       </li>
       <li>
-        <div class="year">2022</div>
-        <span>Graduated with M.S.</span>
+        <i class="fas fa-graduation-cap"></i> Graduated with M.S. (2022)
       </li>
       <!-- Add more list items as needed -->
     </ul>
