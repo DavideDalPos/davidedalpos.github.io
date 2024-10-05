@@ -92,7 +92,7 @@ redirect_from:
 .education li::before {
   content: ''; /* Empty content for the dot */
   position: absolute;
-  left: 0; /* Position dot on the left */
+  left: -25px; /* Position dot on the left, adjust as necessary */
   top: 50%; /* Center the dot vertically */
   transform: translateY(-50%); /* Center dot vertically */
   width: 10px; /* Dot size */
@@ -115,10 +115,16 @@ redirect_from:
 /* Year Positioning */
 .year {
   position: absolute;
-  left: -45px; /* Positioning the year to the left of the dot */
+  right: -45px; /* Positioning the year to the right of the dot */
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
 }
+
+/* Event Content */
+.event-content {
+  margin-left: 10px; /* Add space between the dot and the text */
+}
+
 
 /* About Me Section */
 .about-me {
