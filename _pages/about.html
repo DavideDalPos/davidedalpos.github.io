@@ -101,14 +101,14 @@ redirect_from:
 }
 
 .degree {
-  color: #333; /* Dark text for contrast */
+  margin: 0; /* Reset margin */
 }
 
 .university {
-  display: block; /* Makes sure it's a block element */
   color: #aaa; /* Light grey color */
   font-size: 0.9em; /* Slightly smaller font size */
-  margin-top: 5px; /* Adds space above the university name */
+  margin-top: 5px; /* Space above the university name */
+  margin-left: 25px; /* Indent the university name for alignment */
 }
 
 </style>
@@ -147,8 +147,8 @@ redirect_from:
       <li><i class="fas fa-user-graduate"></i> Published Research Paper</li>
       <li>
         <i class="fas fa-user-graduate"></i>
-        <span class="degree">Bs.C. in Natural Sciences</span> <!-- Line break here -->
-        <span class="university">University of Central Florida</span>
+        <div class="degree">Bs.C. in Natural Sciences</div>
+        <div class="university">University of Central Florida</div> 
       </li>
     </ul>
   </div>
