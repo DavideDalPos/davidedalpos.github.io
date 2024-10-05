@@ -22,15 +22,18 @@ redirect_from:
   flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
+/* Card Styling */
 .v-card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px 15px; /* Reduced padding at the top */
+  padding: 15px; /* Increased padding for better spacing */
   width: 45%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  margin-top: 0; /* Remove additional margin on top */
+  margin-top: 20px; /* Add top margin for spacing between cards */
   position: relative; /* Allow for absolute positioning of children */
+  overflow: hidden; /* Prevent overflow */
+  max-height: 400px; /* Adjust as necessary to fit your content */
 }
 
 .v-card:hover {
@@ -95,6 +98,7 @@ redirect_from:
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
   position: relative; /* For relative positioning */
+  margin: 0; /* Remove margin to fit within the card */
 }
 
 .education li {
