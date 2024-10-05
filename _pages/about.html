@@ -123,6 +123,10 @@ redirect_from:
   transform: translateY(-50%); /* Center the line vertically */
 }
 
+.education li:not(:last-child) .line {
+  height: calc(100% + 20px); /* Extend the line to connect to the next year */
+}
+
 /* Optional: Add hover effect for items */
 .education li:hover .line {
   background-color: #007bff; /* Change color on hover */
@@ -176,8 +180,8 @@ redirect_from:
     <ul>
       <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li> <!-- Alternative for microscope -->
       <li><i class="fas fa-desktop"></i> Databasing</li> <!-- Alternative for computer -->
-      <li><i class="fas fa-bugs"></i> Entomology</li> <!-- Keep the bee icon -->
-      <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
+      <li><i class="fas fa-bug"></i> Entomology</li> <!-- Keep the bee icon -->
+      <li><i class="fas fa-worm"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
     </ul>
   </div>
 <!-- Card 2: Education Timeline -->
