@@ -32,7 +32,7 @@ redirect_from:
   transition: transform 0.2s, box-shadow 0.2s;
   margin-top: 20px; 
   position: relative; /* For child positioning */
-  display: flex; /* Flexbox for content alignment */
+  display: block; /* Flexbox for content alignment */
   flex-direction: column; /* Column layout */
   background-color: #fff; /* Card background color */
 }
@@ -100,6 +100,18 @@ redirect_from:
   line-height: 1.6; /* Adjust line height for readability */
 }
 
+.degree {
+  font-weight: bold; /* Makes the degree bold */
+  color: #333; /* Dark text for contrast */
+}
+
+.university {
+  display: block; /* Makes sure it's a block element */
+  color: #aaa; /* Light grey color */
+  font-size: 0.9em; /* Slightly smaller font size */
+  margin-top: 5px; /* Adds space above the university name */
+}
+
 </style>
 
 <!-- About Me Section -->
@@ -134,7 +146,11 @@ redirect_from:
     <ul>
       <li><i class="fas fa-user-graduate"></i> Completed Ph.D.</li>
       <li><i class="fas fa-user-graduate"></i> Published Research Paper</li>
-      <li><i class="fas fa-user-graduate"></i>Bs.C. in Natural Sciences</li>
+      <li>
+        <i class="fas fa-user-graduate"></i>
+        <span class="degree">Bs.C. in Natural Sciences</span><br> <!-- Line break here -->
+        <span class="university">University of Central Florida</span>
+      </li>
     </ul>
   </div>
 </div>
