@@ -22,13 +22,14 @@ redirect_from:
   flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
-.v-card {
+.v-card, .v-card-small {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 15px;
+  padding: 10px 15px; /* Reduced padding at the top */
   width: 45%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 0; /* Remove additional margin on top */
 }
 
 .v-card:hover {
@@ -37,15 +38,6 @@ redirect_from:
   border-color: #007bff;
 }
 
-.v-card-small {
-  width: 30%; /* Smaller width for the CV download card */
-  align-self: flex-start; /* Align this card at the top */
-  text-align: center; /* Center the content inside the card */
-}
-
-.v-card-small h2 {
-  font-size: 1.2em; /* Smaller header size */
-}
 
 .cv-download {
   display: inline-block;
@@ -62,9 +54,9 @@ redirect_from:
 }
 
 
-.v-card h2 {
+.v-card h2, .v-card-small h2 {
   font-size: 1.5em; /* Adjust header size */
-  margin-bottom: 10px; /* Spacing below header */
+  margin: 5px 0 10px; /* Reduced spacing above and below the title */
 }
 
 .v-card ul {
