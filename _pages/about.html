@@ -103,12 +103,20 @@ redirect_from:
   display: none; /* Hide the line for the last item */
 }
 
+/* Styling for the degree */
+.degree {
+  display: block; /* Ensures the degree appears on a new line */
+  font-size: 1em; /* Adjust font size if necessary */
+  color: #333; /* Darker color for the degree text */
+  margin-top: 5px; /* Space above the degree */
+}
+
 /* Styling for the university */
 .university {
   display: block; /* Ensures the university appears on a new line */
-  font-size: 0.9em; /* Adjust font size if necessary */
+  font-size: 0.9em; /* Slightly smaller font size */
   color: #aaa; /* Lighter grey color for the university */
-  margin-top: 5px; /* Space above the university name */
+  margin-top: 3px; /* Space above the university name */
   margin-left: 30px; /* Align with the degree text */
 }
 
@@ -189,17 +197,17 @@ redirect_from:
     <ul class="education">
       <li class="line-container">
         <div class="year">2024</div>
-        <span>Completed Ph.D.</span>
+        <span class="degree">Completed Ph.D.</span>
         <span class="university">University of Central Florida</span> <!-- University name -->
       </li>
       <li class="line-container">
         <div class="year">2023</div>
-        <span>Published Research Paper</span>
+        <span class="degree">Published Research Paper</span>
         <span class="university">University of Central Florida</span> <!-- University name -->
       </li>
       <li class="line-container">
         <div class="year">2022</div>
-        <span>Graduated with M.S.</span>
+        <span class="degree">Graduated with M.S.</span>
         <span class="university">University of XYZ</span> <!-- University name -->
       </li>
       <!-- Add more list items as needed -->
