@@ -116,23 +116,25 @@ redirect_from:
 .line {
   position: absolute;
   left: -15px; /* Position the line next to the year */
-  top: 20px; /* Adjust this value to move the line down */
-  height: 30px; /* Height to extend down to the next item */
+  top: 50%; /* Center line vertically for first item */
+  height: 30px; /* Height of the line */
   width: 2px; /* Line thickness */
   background-color: #000; /* Line color */
 }
 
-
 /* Positioning lines between items */
 .education li:not(:last-child) .line {
-  height: 30px; /* Height to extend down to the next item */
-  top: 100%; /* Position the line at the bottom of the current item */
-  transform: translateY(-50%); /* Center the line vertically relative to the bottom */
+  top: 50%; /* Adjust this value to position the line correctly */
+}
+
+.education li:not(:last-child) {
+  margin-bottom: 30px; /* Add space between items for line visibility */
 }
 
 .education li:last-child .line {
   display: none; /* Hide the line for the last item */
 }
+
 
 
 
