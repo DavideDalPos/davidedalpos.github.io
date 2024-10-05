@@ -15,119 +15,123 @@ redirect_from:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/sharp.min.css">
 
 <style>
-.v-cards {
-  display: flex;
-  justify-content: space-around; /* Adjusts spacing of cards */
-  margin-top: 20px;
-  flex-wrap: wrap; /* Allow wrapping if needed */
-}
-
-.v-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px 15px; /* Reduced padding at the top */
-  width: 45%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-  margin-top: 0; /* Remove additional margin on top */
-}
-
-.v-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  border-color: #007bff;
-}
-
-
-.cv-download {
-  text-align: center;
-  display: inline-block;
-  background-color: #bdbdbd; /* Darker grey */
-  color: #333; /* Darker text for contrast */
-  padding: 8px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  font-size: 0.9em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-}
-
-.cv-download:hover {
-  background-color: #bdbdbd; /* Slightly darker grey on hover */
-  transform: translateY(-3px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
-}
-
-
-
-.v-card h2 {
-  font-size: 1.5em; /* Adjust header size */
-  margin: 5px 0 10px; /* Reduced spacing above and below the title */
-}
-
-.v-card ul {
-  list-style: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  position: relative; /* Allow positioning of timeline */
-}
-
-.v-card li {
-  margin: 20px 0; /* Spacing between list items */
-  position: relative; /* Allow positioning of timeline dot */
-  padding-left: 30px; /* Space for the timeline dot */
-}
-
-/* Remove dots for interests */
-.interests li::before {
-  content: none; /* Remove the dot for interests */
-}
-
-/* Keep dots for education */
-.education li::before {
-  content: '\f19d'; /* Font Awesome graduation icon */
-  font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
-  font-weight: 900; /* Solid style */
-  position: absolute;
-  left: 0; /* Position icon on the left */
-  top: 50%; /* Center the icon vertically */
-  transform: translateY(-50%); /* Center icon vertically */
-  font-size: 1em; /* Size of the icon */
-  color: #000000; /* Icon color */
-}
-
-.timeline-line {
-  position: absolute;
-  left: 5px; /* Position line slightly to the left */
-  top: 0; /* Start from the top */
-  width: 2px; /* Line width */
-  height: 100%; /* Full height */
-  background-color: #ccc; /* Line color */
-  z-index: -1; /* Behind the list items */
-}
-
-.year {
-  position: absolute;
-  left: -45px; /* Positioning the year to the left of the dot */
-  font-size: 0.9em; /* Adjust font size as needed */
-  color: #555; /* Darker grey for year text */
-}
-/* New About Me section styling */
-.about-me {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.about-me h1 {
-  font-size: 2.5em; /* Adjust title size */
-  color: #333;
-}
-
-.about-me p {
-  font-size: 1.1em; /* Adjust paragraph size */
-  color: #555;
-  line-height: 1.6; /* Adjust line height for readability */
-}
-</style>
+  .v-cards {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing of cards */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+  }
+  
+  .v-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px; /* Reduced padding at the top */
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 0; /* Remove additional margin on top */
+  }
+  
+  .v-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+  }
+  
+  /* CV Download Styling */
+  .cv-download {
+    text-align: center;
+    display: inline-block;
+    background-color: #bdbdbd; /* Darker grey */
+    color: #333; /* Darker text for contrast */
+    padding: 8px 15px;
+    text-decoration: none !important;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 0.9em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .cv-download:hover {
+    background-color: #bdbdbd; /* Slightly darker grey on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  }
+  
+  /* Card Header Styling */
+  .v-card h2 {
+    font-size: 1.5em; /* Adjust header size */
+    margin: 5px 0 10px; /* Reduced spacing above and below the title */
+  }
+  
+  /* List Styling for Timeline */
+  .v-card ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    position: relative; /* Allow positioning of timeline */
+  }
+  
+  .v-card li {
+    margin: 20px 0; /* Spacing between list items */
+    position: relative; /* Allow positioning of timeline dot */
+    padding-left: 30px; /* Space for the timeline dot */
+  }
+  
+  /* Remove dots for interests */
+  .interests li::before {
+    content: none; /* Remove the dot for interests */
+  }
+  
+  /* Dots for education timeline */
+  .education li::before {
+    content: '\f19d'; /* Font Awesome graduation icon */
+    font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
+    font-weight: 900; /* Solid style */
+    position: absolute;
+    left: 0; /* Position icon on the left */
+    top: 50%; /* Center the icon vertically */
+    transform: translateY(-50%); /* Center icon vertically */
+    font-size: 1em; /* Size of the icon */
+    color: #000000; /* Icon color */
+  }
+  
+  /* Timeline Line */
+  .timeline-line {
+    position: absolute;
+    left: 5px; /* Position line slightly to the left */
+    top: 0; /* Start from the top */
+    width: 2px; /* Line width */
+    height: 100%; /* Full height */
+    background-color: #ccc; /* Line color */
+    z-index: -1; /* Behind the list items */
+  }
+  
+  /* Year Positioning */
+  .year {
+    position: absolute;
+    left: -45px; /* Positioning the year to the left of the dot */
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: #555; /* Darker grey for year text */
+  }
+  
+  /* About Me Section */
+  .about-me {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-me h1 {
+    font-size: 2.5em; /* Adjust title size */
+    color: #333;
+  }
+  
+  .about-me p {
+    font-size: 1.1em; /* Adjust paragraph size */
+    color: #555;
+    line-height: 1.6; /* Adjust line height for readability */
+  }
+  </style>
+  
 
 <!-- About Me Section -->
 <div class="about-me">
@@ -153,13 +157,23 @@ redirect_from:
       <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
     </ul>
   </div>
-  <div class="v-card">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2> <!-- Graduation cap icon for education -->
-    <ul class="education"> <!-- Add a class to differentiate education -->
-      <div class="timeline-line"></div> <!-- Vertical line -->
-      <li> Ph.D. in Integrative and Conservation Biology - UCF <span class="year">(2024)</span></li>
-      <li> M.Sc. in Biology - [Your University] <span class="year">(2020)</span></li>
-      <li> B.Sc. in Environmental Science - [Your University] <span class="year">(2018)</span></li>
-    </ul>
-  </div>
+<!-- Card 2: Education Timeline -->
+<div class="v-card education">
+  <h2>Education</h2>
+  <ul>
+    <div class="timeline-line"></div> <!-- Timeline line that runs vertically -->
+    <li>
+      <span class="year">2020</span>
+      <div class="event-content">Graduated with a Bachelor's degree</div>
+    </li>
+    <li>
+      <span class="year">2021</span>
+      <div class="event-content">Started Master's Program</div>
+    </li>
+    <li>
+      <span class="year">2024</span>
+      <div class="event-content">Completed Ph.D.</div>
+    </li>
+  </ul>
+</div>
 </div>
