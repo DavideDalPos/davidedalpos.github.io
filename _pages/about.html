@@ -98,7 +98,7 @@ redirect_from:
 
 .education li {
   position: relative; /* For positioning of children */
-  padding-left: 20px; /* Space for the year */
+  padding-left: 30px; /* Space for the year */
   margin-bottom: 20px; /* Space between timeline items */
 }
 
@@ -116,7 +116,7 @@ redirect_from:
 .line {
   position: absolute;
   left: -15px; /* Position the line next to the year */
-  top: 50%; /* Center line vertically for first item */
+  top: 0; /* Adjust the top positioning to connect correctly */
   height: 30px; /* Height of the line */
   width: 2px; /* Line thickness */
   background-color: #000; /* Line color */
@@ -124,7 +124,7 @@ redirect_from:
 
 /* Positioning lines between items */
 .education li:not(:last-child) .line {
-  top: 50%; /* Adjust this value to position the line correctly */
+  top: 100%; /* Position the line below the year and text */
 }
 
 .education li:not(:last-child) {
