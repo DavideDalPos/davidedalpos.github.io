@@ -37,6 +37,13 @@ redirect_from:
   border-color: #007bff;
 }
 
+/* CV Download Container */
+.cv-download-container {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Optional: add margin for spacing */
+}
+
 /* CV Download Styling */
 .cv-download {
   text-align: center;
@@ -140,8 +147,8 @@ redirect_from:
 </div>
 
 <!-- New smaller v-card for CV download -->
-<div>
-  <a href="your-cv-link.pdf" download class="cv-download"><i class="fas fa-download"></i> Download CV</a>
+<div class="cv-download-container">
+  <a href="your-cv-link.pdf" download class="cv-download">Download CV</a>
 </div>
 
 
