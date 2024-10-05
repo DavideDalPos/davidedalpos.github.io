@@ -61,6 +61,22 @@ redirect_from:
   margin-right: 10px; /* Spacing between icon and text */
 }
 
+.education li {
+  position: relative; /* For positioning of children */
+  padding-left: 30px; /* Space for the year */
+  margin-bottom: 20px; /* Space between timeline items */
+}
+
+.year {
+  position: absolute;
+  left: 0; /* Position the year to the left */
+  top: 50%; /* Center the year vertically */
+  transform: translateY(-50%);
+  font-size: 0.9em; /* Adjust font size as needed */
+  color: #555; /* Darker grey for year text */
+}
+
+
 /* CV Download Container */
 .cv-download-container {
   display: flex; /* Enable flexbox */
@@ -120,15 +136,16 @@ redirect_from:
   </a>
 </div>
 
+
 <!-- V-Cards Container -->
 <div class="v-cards">
   <div class="v-card">
-    <h2><i class="fas fa-leaf"></i> Interests</h2> <!-- Leaf icon for interests -->
+    <h2><i class="fas fa-leaf"></i> Interests</h2>
     <ul>
-      <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li> <!-- Alternative for microscope -->
-      <li><i class="fas fa-desktop"></i> Databasing</li> <!-- Alternative for computer -->
-      <li><i class="fas fa-bug"></i> Entomology</li> <!-- Keep the bee icon -->
-      <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
+      <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li>
+      <li><i class="fas fa-desktop"></i> Databasing</li>
+      <li><i class="fas fa-bug"></i> Entomology</li>
+      <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li>
     </ul>
   </div>
   <!-- Card 2: Education Timeline -->
@@ -136,15 +153,19 @@ redirect_from:
     <h2>Education</h2>
     <ul class="education">
       <li>
-        <i class="fas fa-graduation-cap"></i> Completed Ph.D. (2024)
+        <span class="year">2024</span>
+        <span>Completed Ph.D.</span>
       </li>
       <li>
-        <i class="fas fa-book"></i> Published Research Paper (2023)
+        <span class="year">2023</span>
+        <span>Published Research Paper</span>
       </li>
       <li>
-        <i class="fas fa-graduation-cap"></i> Graduated with M.S. (2022)
+        <span class="year">2022</span>
+        <span>Graduated with M.S.</span>
       </li>
       <!-- Add more list items as needed -->
     </ul>
   </div>
 </div>
+
