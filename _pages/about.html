@@ -26,14 +26,12 @@ redirect_from:
 .v-card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 15px; /* Increased padding for better spacing */
+  padding: 15px; /* Ensures all content inside the card is padded */
   width: 45%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  margin-top: 20px; /* Add top margin for spacing between cards */
-  position: relative; /* Allow for absolute positioning of children */
-  overflow: hidden; /* Prevent overflow */
-  max-height: 400px; /* Adjust as necessary to fit your content */
+  margin-top: 20px; 
+  position: relative; /* For child positioning */
 }
 
 .v-card:hover {
@@ -97,7 +95,6 @@ redirect_from:
 .education {
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
-  position: relative; /* For relative positioning */
   margin: 0; /* Remove margin to fit within the card */
 }
 
@@ -120,7 +117,7 @@ redirect_from:
 /* Line Styling */
 .line {
   position: absolute;
-  left: 20px; /* Position the line next to the year */
+  left: 30px; /* Position the line next to the year */
   top: 0; /* Adjust the top positioning to connect correctly */
   height: 30px; /* Height of the line */
   width: 2px; /* Line thickness */
@@ -140,9 +137,6 @@ redirect_from:
   display: none; /* Hide the line for the last item */
 }
 
-
-
-
 /* About Me Section */
 .about-me {
   text-align: center;
@@ -160,7 +154,6 @@ redirect_from:
   line-height: 1.6; /* Adjust line height for readability */
 }
 </style>
-  
 
 <!-- About Me Section -->
 <div class="about-me">
@@ -176,21 +169,21 @@ redirect_from:
   </a>
 </div>
 
-
 <!-- V-Cards Container -->
 <div class="v-cards">
   <div class="v-card">
     <h2><i class="fas fa-leaf"></i> Interests</h2> <!-- Leaf icon for interests -->
-    <ul>
+    <ul class="interests">
       <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li> <!-- Alternative for microscope -->
       <li><i class="fas fa-desktop"></i> Databasing</li> <!-- Alternative for computer -->
       <li><i class="fas fa-bug"></i> Entomology</li> <!-- Keep the bee icon -->
       <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
     </ul>
   </div>
+  
   <!-- Card 2: Education Timeline -->
   <div class="v-card education">
-    <h2>Education</h2>
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
     <ul class="education">
       <li>
         <div class="year">2024</div>
@@ -210,4 +203,3 @@ redirect_from:
     </ul>
   </div>
 </div>
-
