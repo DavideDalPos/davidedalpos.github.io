@@ -27,7 +27,7 @@ redirect_from:
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 15px; /* Ensures all content inside the card is padded */
-  width: 45%;
+  width: calc(45% - 20px); /* Use calc to account for margins */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   margin-top: 20px; 
@@ -70,7 +70,7 @@ redirect_from:
 /* Card Header Styling */
 .v-card h2 {
   font-size: 1.5em; /* Adjust header size */
-  margin: 5px 0 10px; /* Reduced spacing above and below the title */
+  margin: 0 0 10px; /* Reduced spacing above and below the title */
 }
 
 /* List Styling for Timeline */
@@ -95,9 +95,11 @@ redirect_from:
 .education {
   list-style-type: none; /* Remove default list styling */
   padding: 0; /* Remove padding */
+  position: relative; /* For relative positioning */
   margin: 0; /* Remove margin to fit within the card */
 }
 
+/* Each education entry */
 .education li {
   position: relative; /* For positioning of children */
   padding-left: 30px; /* Space for the year */
@@ -107,7 +109,7 @@ redirect_from:
 /* Year Positioning */
 .year {
   position: absolute;
-  left: 10px; /* Position the year to the left */
+  left: 0; /* Position the year to the left */
   top: 50%; /* Center the year vertically */
   transform: translateY(-50%);
   font-size: 0.9em; /* Adjust font size as needed */
@@ -117,20 +119,16 @@ redirect_from:
 /* Line Styling */
 .line {
   position: absolute;
-  left: 30px; /* Position the line next to the year */
+  left: 10px; /* Position the line next to the year */
   top: 0; /* Adjust the top positioning to connect correctly */
-  height: 30px; /* Height of the line */
+  height: 100%; /* Full height of the list item */
   width: 2px; /* Line thickness */
   background-color: #555; /* Line color */
 }
 
 /* Positioning lines between items */
 .education li:not(:last-child) .line {
-  top: 100%; /* Position the line below the year and text */
-}
-
-.education li:not(:last-child) {
-  margin-bottom: 30px; /* Add space between items for line visibility */
+  top: 0; /* Start from the top of the item */
 }
 
 .education li:last-child .line {
