@@ -13,6 +13,7 @@ redirect_from:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/thin.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/duotone.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/sharp.min.css">
+
 <style>
 .v-cards {
   display: flex;
@@ -88,34 +89,17 @@ redirect_from:
   content: none; /* Remove the dot for interests */
 }
 
-/* Dots for education timeline */
-.education li::before {
-  content: ''; /* Empty content for the dot */
-  position: absolute;
-  left: -5px; /* Position dot on the left, adjust as necessary */
-  top: 50%; /* Center the dot vertically */
-  transform: translateY(-50%); /* Center dot vertically */
-  width: 10px; /* Dot size */
-  height: 10px;
-  background-color: #000; /* Dot color */
-  border-radius: 50%; /* Make it a circle */
-}
-
-/* Timeline Line */
-.timeline-line {
-  position: absolute;
-  left: 5px; /* Position line slightly to the left */
-  top: 0; /* Start from the top */
-  width: 2px; /* Line width */
-  height: 100%; /* Full height */
-  background-color: #000; /* Line color */
-  z-index: -1; /* Behind the list items */
+/* Remove dots for education timeline */
+.education li {
+  position: relative; /* Ensure the list items are positioned for absolute positioning of child elements */
 }
 
 /* Year Positioning */
 .year {
   position: absolute;
-  right: -5px; /* Positioning the year to the right of the dot */
+  left: -5px; /* Keep this to position the year correctly */
+  top: 50%; /* Center the year vertically */
+  transform: translateY(-50%); /* Center year vertically */
   font-size: 0.9em; /* Adjust font size as needed */
   color: #555; /* Darker grey for year text */
 }
@@ -167,7 +151,7 @@ redirect_from:
     <ul>
       <li><i class="fas fa-microscope"></i> Taxonomy (Ichneumoninae)</li> <!-- Alternative for microscope -->
       <li><i class="fas fa-database"></i> Databasing</li> <!-- Alternative for computer -->
-      <li><i class="fas fa-bee"></i> Entomology</li> <!-- Keep the bee icon -->
+      <li><i class="fas fa-bug"></i> Entomology</li> <!-- Keep the bee icon -->
       <li><i class="fas fa-chart-line"></i> Evolutionary Morphology</li> <!-- Alternative for timeline -->
     </ul>
   </div>
