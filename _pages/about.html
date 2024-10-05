@@ -85,18 +85,24 @@ redirect_from:
 }
 
 .line-container {
-  position: relative; /* Needed for absolute positioning of lines */
+  position: relative; /* Positioning context for the absolute line */
 }
 
-.line-container:not(:last-child)::after {
+.line-container::after {
   content: ""; /* Creates a pseudo-element */
   position: absolute;
-  left: 15px; /* Position relative to year */
-  top: 30%; /* Adjust based on your layout; it connects to the next item */
+  left: 10px; /* Adjust the left position as needed */
+  top: 20px; /* Adjust to position the line below the year */
   height: 30px; /* Height of the line */
   width: 2px; /* Thickness of the line */
   background-color: #555; /* Color of the line */
 }
+
+/* Remove lines from the last item */
+.line-container:last-child::after {
+  display: none; /* Hide the line for the last item */
+}
+
 
 /* CV Download Container */
 .cv-download-container {
