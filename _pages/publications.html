@@ -77,6 +77,10 @@ author_profile: true
   max-width: 3000px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+.v-card:hover {
+    background-color: rgba(230, 230, 230, 0.5); /* Change background color on hover */
+}
 </style>
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -87,7 +91,7 @@ author_profile: true
 
 <div class="outer-card">
   <div style="display: flex; flex-wrap: wrap; width: 100%;">
-    <div class="v-card">
+    <a href="/2024-dalpos/" target="_blank" class="v-card"> <!-- Make the entire card clickable -->
       <ol style="margin: 1px 15px 15px 2px"> <!-- Use <ol> for ordered list -->
         <!-- Publication 1 -->
         <p>
@@ -98,7 +102,7 @@ author_profile: true
             <div style="display: inline;">
               <u>Dal Pos, D.</u> & Sharanowski, B. J. (2024) 
               <div class="tooltip" style="display: inline; margin-right: 5px;">
-                <a href="/2024-dalpos/" target="_blank">A host driven parasitoid syndrome: Convergent evolution of multiple traits associated with woodboring hosts in Ichneumonidae (Hymenoptera, Ichneumonoidea).</a>
+                <span>A host driven parasitoid syndrome: Convergent evolution of multiple traits associated with woodboring hosts in Ichneumonidae (Hymenoptera, Ichneumonoidea).</span>
                 <span class="tooltiptext">Click to view more</span>
               </div>
               <span style="display: inline;">
@@ -112,7 +116,7 @@ author_profile: true
           </div>
         </li>
       </ol>
-    </div>
+    </a>
   </div>
 </div>
 
