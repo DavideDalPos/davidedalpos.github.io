@@ -24,55 +24,95 @@ author_profile: true
     border: 1px solid #ccc;
     margin-top: 20px; /* Optional: add space above the graph */
   }
+
+  /* Tooltip styling */
+  .tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    font-size: 14px;
+    z-index: 10;
+  }
 </style>
 
 <h1 class="underlined-heading">Research</h1>
 
 <!-- Collaboration Network -->
 <div id="cy"></div>
+<div id="tooltip" class="tooltip"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.1/cytoscape.min.js"></script>
 <script>
-  // Initialize the collaboration network using Cytoscape.js
-  var cy = cytoscape({
-    container: document.getElementById('cy'), // container for the graph
-    elements: [
-      // Nodes (Collaborators)
-      { data: { id: 'Davide' } },
-      { data: { id: 'Collaborator1' } },
-      { data: { id: 'Collaborator2' } },
-      { data: { id: 'Collaborator3' } },
+  document.addEventListener('DOMContentLoaded', function () {
+    // Data for tooltip display
+    var nodeInfo = {
+      'Davide': 'Davide Dal Pos - PhD researcher specializing in parasitoid wasps.',
+      'Filippo': 'Filippo Di Giovanni - Collaborator on taxonomy and species descriptions.',
+      'Alessandra': 'Alessandra - Research collaborator focusing on morphology.'
+    };
 
-      // Edges (Connections between nodes)
-      { data: { id: 'e1', source: 'Davide', target: 'Collaborator1' } },
-      { data: { id: 'e2', source: 'Davide', target: 'Collaborator2' } },
-      { data: { id: 'e3', source: 'Collaborator1', target: 'Collaborator3' } }
-    ],
-    style: [
-      {
-        selector: 'node',
-        style: {
-          'background-color': '#007bff',
-          'label': 'data(id)',
-          'color': '#fff',
-          'font-size': '12px',
-          'text-valign': 'center',
-          'text-halign': 'center',
+    // Initialize Cytoscape
+    var cy = cytoscape({
+      container: document.getElementById('cy'),
+      elements: [
+        // Nodes with IDs and labels
+        { data: { id: 'Davide', label: 'Davide Dal Pos' } },
+        { data: { id: 'Filippo', label: 'Filippo Di Giovanni' } },
+        { data: { id: 'Alessandra', label: 'Alessandra' } },
+
+        // Edges (connections)
+        { data: { id: 'e1', source: 'Davide', target: 'Filippo' } },
+        { data: { id: 'e2', source: 'Davide', target: 'Alessandra' } }
+      ],
+      style: [
+        {
+          selector: 'node',
+          style: {
+            'background-color': '#007bff',
+            'label': 'data(label)',
+            'color': '#fff',
+            'font-size': '12px',
+            'text-valign': 'center',
+            'text-halign': 'center',
+          }
+        },
+        {
+          selector: 'edge',
+          style: {
+            'width': 2,
+            'line-color': '#ccc',
+            'target-arrow-color': '#ccc',
+            'target-arrow-shape': 'triangle',
+            'curve-style': 'bezier'
+          }
         }
-      },
-      {
-        selector: 'edge',
-        style: {
-          'width': 2,
-          'line-color': '#ccc',
-          'target-arrow-color': '#ccc',
-          'target-arrow-shape': 'triangle',
-          'curve-style': 'bezier'
-        }
+      ],
+      layout: {
+        name: 'circle'
       }
-    ],
-    layout: {
-      name: 'circle', // Set initial layout to circle for better visibility
-    }
+    });
+
+    // Tooltip functionality
+    cy.on('tap', 'node', function (evt) {
+      var node = evt.target;
+      var info = nodeInfo[node.id()];
+      var tooltip = document.getElementById('tooltip');
+      
+      tooltip.innerHTML = info;
+      tooltip.style.left = evt.renderedPosition.x + 'px';
+      tooltip.style.top = evt.renderedPosition.y + 'px';
+      tooltip.style.display = 'block';
+    });
+
+    // Hide the tooltip when clicking outside nodes
+    cy.on('tap', function (evt) {
+      if (evt.target === cy) {
+        var tooltip = document.getElementById('tooltip');
+        tooltip.style.display = 'none';
+      }
+    });
   });
 </script>
