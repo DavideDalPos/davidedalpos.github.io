@@ -4,7 +4,28 @@ title:
 permalink: /education/
 author_profile: true
 ---
-<style> 
+<style>
+  .timeline-intro {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .timeline-intro__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .timeline-intro__paragraph {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
   .timeline {
     margin: 0 auto;
     max-width: 800px;
@@ -21,7 +42,7 @@ author_profile: true
   .timeline__component {
     margin: 0 20px 30px 20px;
   }
-  
+
   .timeline__component--bg {
     padding: 1.5em;
     background: #ffffff;
@@ -30,16 +51,11 @@ author_profile: true
     width: 90%;
     transition: background 0.3s ease;
   }
-  
+
   .timeline__component--bg:hover {
     background: #f0f0f0;
   }
 
-  /* Keep last */
-  .timeline__component--bottom {
-    margin-bottom: 0;
-  }
-  
   .timeline__middle {
     position: relative;
     background: #333;
@@ -57,12 +73,6 @@ author_profile: true
     border-radius: 50%;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   }
-  
-  /* Keep last */
-  .timeline__point--bottom {
-    top: initial;
-    bottom: 0;
-  }
 
   .timeline__date {
     font-size: 14px;
@@ -74,7 +84,7 @@ author_profile: true
   .timeline__date--right {
     text-align: right;
   }
-  
+
   .timeline__title {
     margin: 0;
     font-size: 1.1em;
@@ -105,13 +115,18 @@ author_profile: true
     line-height: 1.4;
   }
 
-  /* Add hover effect for the list items */
   .timeline__list li:hover {
     color: #000;
     font-weight: bold;
   }
 </style>
 
+<div class="timeline-intro">
+  <h1 class="timeline-intro__title">Education</h1>
+  <p class="timeline-intro__paragraph">
+    My academic journey has taken me through diverse fields and institutions, each contributing to my expertise in biology and conservation. Here's an overview of my educational background:
+  </p>
+</div>
 
 <div class="timeline">
 
