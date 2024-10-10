@@ -6,15 +6,73 @@ author_profile: true
 ---
 
 <style>
-    .underlined-heading {
-      text-decoration: underline;
-      font-family: Arial, sans-serif; /* Optional: change font if desired */
+  .underlined-heading {
+    text-decoration: underline;
+    font-family: Arial, sans-serif; /* Optional: change font if desired */
+  }
+
+  /* Center the h1 */
+  h1 {
+    text-align: center;
+  }
+
+  /* Set up the container for Cytoscape */
+  #cy {
+    width: 100%;
+    height: 600px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 20px; /* Optional: add space above the graph */
+  }
+</style>
+
+<h1 class="underlined-heading">Research</h1>
+
+<!-- Collaboration Network -->
+<div id="cy"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.1/cytoscape.min.js"></script>
+<script>
+  // Initialize the collaboration network using Cytoscape.js
+  var cy = cytoscape({
+    container: document.getElementById('cy'), // container for the graph
+    elements: [
+      // Nodes (Collaborators)
+      { data: { id: 'Davide' } },
+      { data: { id: 'Collaborator1' } },
+      { data: { id: 'Collaborator2' } },
+      { data: { id: 'Collaborator3' } },
+
+      // Edges (Connections between nodes)
+      { data: { id: 'e1', source: 'Davide', target: 'Collaborator1' } },
+      { data: { id: 'e2', source: 'Davide', target: 'Collaborator2' } },
+      { data: { id: 'e3', source: 'Collaborator1', target: 'Collaborator3' } }
+    ],
+    style: [
+      {
+        selector: 'node',
+        style: {
+          'background-color': '#007bff',
+          'label': 'data(id)',
+          'color': '#fff',
+          'font-size': '12px',
+          'text-valign': 'center',
+          'text-halign': 'center',
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'width': 2,
+          'line-color': '#ccc',
+          'target-arrow-color': '#ccc',
+          'target-arrow-shape': 'triangle',
+          'curve-style': 'bezier'
+        }
+      }
+    ],
+    layout: {
+      name: 'circle', // Set initial layout to circle for better visibility
     }
-  
-    /* Add a rule to center the h1 */
-    h1 {
-      text-align: center;
-    }
-  </style>
-  
-  <h1 class="underlined-heading">Research</h1>
+  });
+</script>
