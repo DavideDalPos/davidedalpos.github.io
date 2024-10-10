@@ -98,24 +98,16 @@ redirect_from:
 .about-me {
   text-align: center;
   margin-bottom: 30px;
-  position: relative; /* Allows for absolute positioning of children */
-  background-image: url('/publications/images/logoWid_wasp.png'); /* Path to your image */
-  background-size: cover; /* Cover the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Don't repeat the image */
-  padding: 40px; /* Add padding to avoid content touching the edges */
-  color: #fff; /* Change text color for better contrast */
-  opacity: 0.9; /* Optional: adjust the entire section's opacity */
 }
 
 .about-me h1 {
   font-size: 2.5em; /* Adjust title size */
-  color: #fff; /* White text for contrast */
+  color: #333;
 }
 
 .about-me p {
   font-size: 1.1em; /* Adjust paragraph size */
-  color: #fff; /* White text for contrast */
+  color: #555;
   line-height: 1.6; /* Adjust line height for readability */
   text-align: justify;
 }
@@ -128,12 +120,16 @@ redirect_from:
   margin-left: 20px; /* Indent the university name for alignment */
 }
 
+.transparent-image {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.5; /* Adjust the opacity as needed (0 is fully transparent, 1 is fully opaque) */
+}
 
 </style>
 
 <!-- About Me Section -->
-<!-- About Me Section -->
-<div class="about-me" style="position: relative; overflow: hidden;">
+<div class="about-me">
   <h1>About Me</h1> <!-- Title of the page -->
   <p>
     Hello! My name is Davide Dal Pos, and I am currently a Ph.D. candidate at the 
@@ -141,7 +137,8 @@ redirect_from:
     of parasitoid wasps. 
     My research interest span across entomology and taxonomy (specifically of Ichneumoninae), databasing 
     and collection management. 
-  </p>
+</p>
+
 </div>
 
 <!-- New smaller v-card for CV download -->
@@ -184,3 +181,9 @@ redirect_from:
   </div>
 </div>
 
+<!-- Image Section -->
+<!-- Image Section -->
+<div class="image-section" style="text-align: center; margin-top: 20px;">
+  <img src="/publications/images/logoWid_wasp.png" alt="Description of the image" 
+       class="transparent-image">
+</div>
