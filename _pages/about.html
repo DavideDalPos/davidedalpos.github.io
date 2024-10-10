@@ -120,6 +120,13 @@ redirect_from:
   margin-left: 20px; /* Indent the university name for alignment */
 }
 
+.transparent-image {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.5; /* Adjust the opacity as needed (0 is fully transparent, 1 is fully opaque) */
+  filter: grayscale(100%); /* Optional: to add a grayscale effect */
+}
+
 </style>
 
 <!-- About Me Section -->
@@ -176,7 +183,8 @@ redirect_from:
 </div>
 
 <!-- Image Section -->
+<!-- Image Section -->
 <div class="image-section" style="text-align: center; margin-top: 20px;">
   <img src="/publications/images/logoWid_wasp.png" alt="Description of the image" 
-  style="max-width: 100%; height: auto;">
+       class="transparent-image">
 </div>
