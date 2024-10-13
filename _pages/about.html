@@ -97,31 +97,23 @@ redirect_from:
 /* About Me Section with Flexbox */
 .about-me {
   display: flex;
-  align-items: center; /* Align image and text vertically */
-  justify-content: center; /* Center the content */
+  align-items: center; /* Aligns the image and text vertically in the middle */
+  justify-content: flex-start; /* Ensures that they stay on the left side */
   margin-bottom: 30px;
-  text-align: left; /* Ensure text is aligned to the left */
+  text-align: left; /* Keep text aligned to the left */
+}
+
+.about-me img {
+  max-width: 100px; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 20px; /* Adds space between the image and the title */
+  border-radius: 50%; /* Optional: make the image circular */
 }
 
 .about-me h1 {
   font-size: 2.5em; /* Adjust title size */
   color: #333;
-  margin-left: 20px; /* Add space between the image and the title */
-}
-
-.about-me p {
-  font-size: 1.1em; /* Adjust paragraph size */
-  color: #555;
-  line-height: 1.6; /* Adjust line height for readability */
-  text-align: justify;
-}
-
-.about-me img {
-  max-width: 150px; /* Adjust image width */
-  height: auto;
-  opacity: 0.5; /* Adjust opacity */
-  margin-right: 20px; /* Space between the image and text */
-  border-radius: 50%; /* Optional: Make the image circular */
+  margin: 0; /* Ensure no extra margin around the title */
 }
 
 
