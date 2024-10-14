@@ -134,23 +134,21 @@ redirect_from:
 }
 
 .image-section {
-   background: linear-gradient(135deg, #e3f2fd, #f1f8e9); /* Soft gradient */
-   padding: 20px; /* Adds spacing between image and background */
-   border-radius: 10px; /* Optional, for rounded corners */
-   overflow: hidden; /* Ensure content stays within the section */
    position: relative;
-   z-index: 1; /* Necessary for the parallax effect */
+   overflow: hidden; /* Ensures no overflow when the parallax effect happens */
+   height: 400px; /* Adjust height to control how much space the parallax effect uses */
+   height: 300px; /* For a shorter section */
 }
 
 .parallax-image {
-   width: 100%; /* Ensures the image takes up full width of the section */
+   width: 100%; /* Make the image span the full width */
    height: auto; /* Maintain aspect ratio */
-   background-attachment: fixed; /* Parallax effect */
-   background-size: cover;
-   display: block; /* Ensures the image is treated as block for padding */
-   background-position: center center; /* Ensures the image is centered */
-   position: relative;
-   z-index: 2; /* Keep the image above the background */
+   background-attachment: fixed; /* Enables the parallax effect */
+   background-size: cover; /* Ensure the image covers the entire container */
+   background-position: center center; /* Keeps the image centered */
+   position: absolute;
+   top: 0;
+   left: 0;
 }
 
 
