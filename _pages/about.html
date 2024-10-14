@@ -140,16 +140,23 @@ redirect_from:
    height: 300px; /* For a shorter section */
 }
 
+.parallax-container {
+   height: 400px; /* Height of the section */
+   overflow: hidden; /* Hide any overflow from the image */
+   position: relative;
+}
+
 .parallax-image {
-   width: 100%; /* Make the image span the full width */
-   height: auto; /* Maintain aspect ratio */
-   background-attachment: fixed; /* Enables the parallax effect */
-   background-size: cover; /* Ensure the image covers the entire container */
-   background-position: center center; /* Keeps the image centered */
    position: absolute;
    top: 0;
    left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed; /* The key property for parallax */
 }
+
 
 
 </style>
@@ -212,6 +219,7 @@ redirect_from:
 
 <!-- Image Section -->
 <!-- Image Section -->
-<div class="image-section">
-  <img src="/publications/images/Probolus_face.png" alt="Probolus Face Image" class="parallax-image">
+<div class="parallax-container">
+  <div class="parallax-image" style="background-image: url('/publications/images/Probolus_face.png');"></div>
 </div>
+
