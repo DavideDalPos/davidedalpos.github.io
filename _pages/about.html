@@ -133,6 +133,27 @@ redirect_from:
   opacity: 0.5; /* Adjust the opacity as needed (0 is fully transparent, 1 is fully opaque) */
 }
 
+.image-section {
+   background: linear-gradient(135deg, #e3f2fd, #f1f8e9); /* Soft gradient */
+   padding: 20px; /* Adds spacing between image and background */
+   border-radius: 10px; /* Optional, for rounded corners */
+   overflow: hidden; /* Ensure content stays within the section */
+   position: relative;
+   z-index: 1; /* Necessary for the parallax effect */
+}
+
+.parallax-image {
+   width: 100%; /* Ensures the image takes up full width of the section */
+   height: auto; /* Maintain aspect ratio */
+   background-attachment: fixed; /* Parallax effect */
+   background-size: cover;
+   display: block; /* Ensures the image is treated as block for padding */
+   background-position: center center; /* Ensures the image is centered */
+   position: relative;
+   z-index: 2; /* Keep the image above the background */
+}
+
+
 </style>
 
 <!-- About Me Section -->
@@ -193,7 +214,6 @@ redirect_from:
 
 <!-- Image Section -->
 <!-- Image Section -->
-<div class="image-section" style="text-align: center; margin-top: 20px;">
-  <img src="/publications/images/Probolus_face.png" alt="Description of the image" 
-       class="transparent-image">
+<div class="image-section">
+  <img src="/publications/images/Probolus_face.png" alt="Probolus Face Image" class="parallax-image">
 </div>
