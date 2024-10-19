@@ -29,6 +29,11 @@ author_profile: true
         height: auto; /* Maintain aspect ratio */
     }
 
+    .image-gallery a img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out;
+}
+
     a {
         color: #333; /* Lighter black for links */
         text-decoration: none;
@@ -73,10 +78,10 @@ author_profile: true
 
     <div class="image-gallery">
         <a href="/publications/images/P.nyeupe.png" target="_blank" download>
-            <img src="/publications/images/P.nyeupe.png" alt="Figure 1">
+            <img src="/publications/images/P.nyeupe.png" alt="Figure 1" loading="lazy">
         </a>
         <a href="/publications/images/African_protoleptops_Map.png" target="_blank" download>
-            <img src="/publications/images/African_protoleptops_Map.png" alt="Figure 2">
+            <img src="/publications/images/African_protoleptops_Map.png" alt="Figure 2" loading="lazy">
         </a>
     </div>
 
@@ -84,4 +89,3 @@ author_profile: true
         <p><a href="/publications/">Back to Publications</a></p>
     </footer>
 </div>
-
