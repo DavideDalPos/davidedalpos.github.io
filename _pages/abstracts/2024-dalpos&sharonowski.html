@@ -26,7 +26,9 @@ author_profile: true
 
 
 .image-gallery figure {
-    display: inline-block; /* Keep figures inline for stacking */
+    display: flex; /* Use flexbox for the figure */
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center items in the figure */
     margin: 10px; /* Add margin between figures */
 }
 
