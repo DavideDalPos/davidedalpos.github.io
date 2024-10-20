@@ -18,10 +18,12 @@ author_profile: true
 }
 
 .image-gallery {
-    display: block; /* Change to block for vertical alignment */
-    text-align: center; /* Center the images horizontally */
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow wrapping of images */
+    justify-content: center; /* Center the images horizontally */
     margin: 20px 0; /* Space above and below the gallery */
 }
+
 
 .image-gallery figure {
     display: inline-block; /* Keep figures inline for stacking */
