@@ -61,38 +61,43 @@ author_profile: true
     color: #555; /* Optional: a lighter color for the caption */
 }
 
-/* Modal styling */
+/* The Modal (background) */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 60px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.9); /* Black with opacity */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
+/* Modal Content (the image) */
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
+    width: 80%;
+    max-width: 700px;
 }
 
+/* Caption for Modal */
 #modalCaption {
     text-align: center;
     color: #ccc;
-    margin-top: 15px;
-    font-size: 1.1em;
+    font-size: 16px;
+    padding: 10px 0;
+    height: 50px;
 }
 
+/* The Close Button */
 .close {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 35px;
-    color: #fff;
+    color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -105,6 +110,21 @@ author_profile: true
     cursor: pointer;
 }
 
+function openModal(imageUrl, captionText) {
+    var modal = document.getElementById("imageModal");
+    var modalImage = document.getElementById("modalImage");
+    var modalCaption = document.getElementById("modalCaption");
+
+    modal.style.display = "block";
+    modalImage.src = imageUrl;
+    modalCaption.innerHTML = captionText;
+}
+
+// Close the Modal
+function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
 
 </style>
 
@@ -136,24 +156,17 @@ author_profile: true
 
     <div class="image-gallery">
         <figure>
-            <a href="javascript:void(0);" onclick="openModal('Masona_wow.png', 'Figure 1: Masona wow Dal Pos & Martens sp. nov., California')">
+            <a href="javascript:void(0);" onclick="openModal('/publications/images/Masona_wow.png', 'Figure 1: <i>Masona wow</i> Dal Pos & Martens sp. nov.')">
                 <img src="/publications/images/Masona_wow.png" alt="Figure 1" loading="lazy">
             </a>
-            <figcaption>Figure 1: <i>Masona wow</i> Dal Pos & Martens sp. nov., California</figcaption>
+            <figcaption><i>Masona wow</i> Dal Pos & Martens sp. nov.</figcaption>
         </figure>
         <figure>
-            <a href="javascript:void(0);" onclick="openModal('Masona_neon.png', 'Figure 2: Masona neon Dal Pos & Martens sp. nov., Puerto Rico')">
+            <a href="javascript:void(0);" onclick="openModal('/publications/images/Masona_neon.png', 'Figure 2: <i>Masona neon</i> Dal Pos & Martens sp. nov.')">
                 <img src="/publications/images/Masona_neon.png" alt="Figure 2" loading="lazy">
             </a>
-            <figcaption>Figure 2: <i>Masona neon</i> Dal Pos & Martens sp. nov., Puerto Rico</figcaption>
+            <figcaption><i>Masona neon</i> Dal Pos & Martens sp. nov.</figcaption>
         </figure>
-    </div>
-    
-    <!-- The Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="modalCaption"></div>
     </div>
 
     <footer>
@@ -161,3 +174,9 @@ author_profile: true
     </footer>
 </div>
 
+<!-- Modal Structure -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="modalCaption"></div>
+</div>
