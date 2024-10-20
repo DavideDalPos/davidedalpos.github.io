@@ -17,50 +17,49 @@ author_profile: true
     font-family: Arial, sans-serif;
 }
 
-    .image-gallery {
-        display: flex;
-        justify-content: center; /* Center the images horizontally */
-        gap: 20px; /* Space between images */
-        margin: 20px 0; /* Space above and below the gallery */
-    }
-    
-    .image-gallery a img {
-        width: 150px; /* Width of images */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .image-gallery a img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    transition: transform 0.3s ease-in-out;
-    }
-
-    a {
-        color: #333; /* Lighter black for links */
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #555; /* Slightly lighter black on hover */
-    }
-
-    .abstract {
-        text-align: justify;
-    }
-
-    .image-gallery {
+.image-gallery {
     display: flex;
     justify-content: center; /* Center the images horizontally */
-    align-items: flex-end; /* Align items at the bottom */
     gap: 20px; /* Space between images */
     margin: 20px 0; /* Space above and below the gallery */
 }
 
+.image-gallery figure {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center image and caption horizontally */
+    margin: 0; /* Remove default figure margin */
+}
+
+.image-gallery a img {
+    width: 150px; /* Width of images */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a max height for uniformity */
+}
+
+.image-gallery a img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out;
+}
+
 .image-gallery figcaption {
-    margin-top: -10px;
+    margin-top: 5px; /* Space between image and caption */
     font-size: 0.6em;
     color: #555; /* Optional: a lighter color for the caption */
 }
 
+a {
+    color: #333; /* Lighter black for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555; /* Slightly lighter black on hover */
+}
+
+.abstract {
+    text-align: justify;
+}
 </style>
 
 <div class="v-card">
@@ -108,4 +107,3 @@ author_profile: true
         <p><a href="/publications/">Back to Publications</a></p>
     </footer>
 </div>
-
