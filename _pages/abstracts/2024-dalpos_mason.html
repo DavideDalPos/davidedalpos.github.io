@@ -48,7 +48,11 @@ author_profile: true
     }
 
     .image-gallery figure {
-    text-align: center; /* Center the captions */
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center image and caption horizontally */
+    margin: 0; /* Remove default figure margin */
+    text-align: center; /* Center the caption text */
 }
 
 .image-gallery figcaption {
@@ -99,7 +103,7 @@ author_profile: true
             <figcaption>Figure 2: <i>Masona neon</i> Dal Pos & Martens sp. nov., Puerto Rico</figcaption>
         </figure>
     </div>
-    
+
     <footer>
         <p><a href="/publications/">Back to Publications</a></p>
     </footer>
