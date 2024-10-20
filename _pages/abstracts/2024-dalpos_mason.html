@@ -20,6 +20,7 @@ author_profile: true
 .image-gallery {
     display: flex;
     justify-content: center; /* Center the images horizontally */
+    align-items: flex-start; /* Align items at the top */
     gap: 20px; /* Space between images */
     margin: 20px 0; /* Space above and below the gallery */
 }
@@ -32,9 +33,9 @@ author_profile: true
 }
 
 .image-gallery a img {
-    width: 150px; /* Width of images */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 150px; /* Set a max height for uniformity */
+    width: 150px; /* Set a uniform width for images */
+    height: 150px; /* Set a uniform height for images */
+    object-fit: cover; /* Maintain aspect ratio while covering the space */
 }
 
 .image-gallery a img:hover {
@@ -91,19 +92,4 @@ a:hover {
     <div class="image-gallery">
         <figure>
             <a href="/publications/images/Masona_wow.png" target="_blank" download>
-                <img src="/publications/images/Masona_wow.png" alt="Figure 1" loading="lazy">
-            </a>
-            <figcaption><i>Masona wow</i> Dal Pos & Martens, 2024</figcaption>
-        </figure>
-        <figure>
-            <a href="/publications/images/Masona_neon.png" target="_blank" download>
-                <img src="/publications/images/Masona_neon.png" alt="Figure 2" loading="lazy">
-            </a>
-            <figcaption><i>Masona neon</i> Dal Pos & Martens, 2024</figcaption>
-        </figure>
-    </div>
-
-    <footer>
-        <p><a href="/publications/">Back to Publications</a></p>
-    </footer>
-</div>
+                <img src="/publications/images/Masona_wow.png" alt="Figur
