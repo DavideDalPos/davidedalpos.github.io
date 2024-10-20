@@ -46,6 +46,17 @@ author_profile: true
     .abstract {
         text-align: justify;
     }
+
+    .image-gallery figure {
+    text-align: center; /* Center the captions */
+}
+
+.image-gallery figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555; /* Optional: a lighter color for the caption */
+}
+
 </style>
 
 <div class="v-card">
@@ -75,14 +86,20 @@ author_profile: true
     </section>
 
     <div class="image-gallery">
-        <a href="/publications/images/Masona_wow.png" target="_blank" download>
-            <img src="/publications/images/Masona_wow.png" alt="Figure 1" loading="lazy">
-        </a>
-        <a href="/publications/images/Masona_neon.png" target="_blank" download>
-            <img src="/publications/images/Masona_neon.png" alt="Figure 2" loading="lazy">
-        </a>
+        <figure>
+            <a href="/publications/images/Masona_wow.png" target="_blank" download>
+                <img src="/publications/images/Masona_wow.png" alt="Figure 1" loading="lazy">
+            </a>
+            <figcaption>Figure 1: <i>Masona wow</i> Dal Pos & Martens sp. nov., California</figcaption>
+        </figure>
+        <figure>
+            <a href="/publications/images/Masona_neon.png" target="_blank" download>
+                <img src="/publications/images/Masona_neon.png" alt="Figure 2" loading="lazy">
+            </a>
+            <figcaption>Figure 2: <i>Masona neon</i> Dal Pos & Martens sp. nov., Puerto Rico</figcaption>
+        </figure>
     </div>
-
+    
     <footer>
         <p><a href="/publications/">Back to Publications</a></p>
     </footer>
