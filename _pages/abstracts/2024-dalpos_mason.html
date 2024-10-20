@@ -61,6 +61,51 @@ author_profile: true
     color: #555; /* Optional: a lighter color for the caption */
 }
 
+/* Modal styling */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); /* Black with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+}
+
+#modalCaption {
+    text-align: center;
+    color: #ccc;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 </style>
 
 <div class="v-card">
@@ -91,17 +136,24 @@ author_profile: true
 
     <div class="image-gallery">
         <figure>
-            <a href="/publications/images/Masona_wow.png" target="_blank" download>
+            <a href="javascript:void(0);" onclick="openModal('Masona_wow.png', 'Figure 1: Masona wow Dal Pos & Martens sp. nov., California')">
                 <img src="/publications/images/Masona_wow.png" alt="Figure 1" loading="lazy">
             </a>
-            <figcaption><i>Masona wow</i> Dal Pos & Martens sp. nov.</figcaption>
+            <figcaption>Figure 1: <i>Masona wow</i> Dal Pos & Martens sp. nov., California</figcaption>
         </figure>
         <figure>
-            <a href="/publications/images/Masona_neon.png" target="_blank" download>
+            <a href="javascript:void(0);" onclick="openModal('Masona_neon.png', 'Figure 2: Masona neon Dal Pos & Martens sp. nov., Puerto Rico')">
                 <img src="/publications/images/Masona_neon.png" alt="Figure 2" loading="lazy">
             </a>
-            <figcaption><i>Masona neon</i> Dal Pos & Martens sp. nov.</figcaption>
+            <figcaption>Figure 2: <i>Masona neon</i> Dal Pos & Martens sp. nov., Puerto Rico</figcaption>
         </figure>
+    </div>
+    
+    <!-- The Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
     </div>
 
     <footer>
