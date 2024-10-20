@@ -56,74 +56,9 @@ author_profile: true
 }
 
 .image-gallery figcaption {
-    margin-top: 1px;
-    font-size: 0.5em;
+    margin-top: 0px;
+    font-size: 0.6em;
     color: #555; /* Optional: a lighter color for the caption */
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (the image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption for Modal */
-#modalCaption {
-    text-align: center;
-    color: #ccc;
-    font-size: 16px;
-    padding: 10px 0;
-    height: 50px;
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-function openModal(imageUrl, captionText) {
-    var modal = document.getElementById("imageModal");
-    var modalImage = document.getElementById("modalImage");
-    var modalCaption = document.getElementById("modalCaption");
-
-    modal.style.display = "block";
-    modalImage.src = imageUrl;
-    modalCaption.innerHTML = captionText;
-}
-
-// Close the Modal
-function closeModal() {
-    var modal = document.getElementById("imageModal");
-    modal.style.display = "none";
 }
 
 </style>
@@ -156,13 +91,13 @@ function closeModal() {
 
     <div class="image-gallery">
         <figure>
-            <a href="javascript:void(0);" onclick="openModal('/publications/images/Masona_wow.png', 'Figure 1: <i>Masona wow</i> Dal Pos & Martens sp. nov.')">
+            <a href="/publications/images/Masona_wow.png" target="_blank" download>
                 <img src="/publications/images/Masona_wow.png" alt="Figure 1" loading="lazy">
             </a>
             <figcaption><i>Masona wow</i> Dal Pos & Martens sp. nov.</figcaption>
         </figure>
         <figure>
-            <a href="javascript:void(0);" onclick="openModal('/publications/images/Masona_neon.png', 'Figure 2: <i>Masona neon</i> Dal Pos & Martens sp. nov.')">
+            <a href="/publications/images/Masona_neon.png" target="_blank" download>
                 <img src="/publications/images/Masona_neon.png" alt="Figure 2" loading="lazy">
             </a>
             <figcaption><i>Masona neon</i> Dal Pos & Martens sp. nov.</figcaption>
@@ -174,9 +109,3 @@ function closeModal() {
     </footer>
 </div>
 
-<!-- Modal Structure -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImage">
-    <div id="modalCaption"></div>
-</div>
