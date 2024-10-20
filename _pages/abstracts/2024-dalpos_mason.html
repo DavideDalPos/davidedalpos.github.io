@@ -47,12 +47,12 @@ author_profile: true
         text-align: justify;
     }
 
-    .image-gallery figure {
+    .image-gallery {
     display: flex;
-    flex-direction: column; /* Stack image and caption vertically */
-    align-items: center; /* Center image and caption horizontally */
-    margin: 0; /* Remove default figure margin */
-    text-align: center; /* Center the caption text */
+    justify-content: center; /* Center the images horizontally */
+    align-items: flex-end; /* Align items at the bottom */
+    gap: 20px; /* Space between images */
+    margin: 20px 0; /* Space above and below the gallery */
 }
 
 .image-gallery figcaption {
