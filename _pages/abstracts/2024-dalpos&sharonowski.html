@@ -25,13 +25,17 @@ author_profile: true
 
 
 .image-gallery figure {
-    display: inline-block; /* Keep figures inline for stacking */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack the image and caption vertically */
+    align-items: center; /* Center the image and caption */
     margin: 10px; /* Add margin between figures */
+    height: 150px; /* Set a fixed height for the figure */
 }
 
 .image-gallery a img {
     width: 150px; /* Width of images */
     height: auto; /* Maintain aspect ratio */
+    margin-bottom: auto; /* Push the image to the bottom */
 }
 
     .image-gallery a img:hover {
