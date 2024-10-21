@@ -42,6 +42,7 @@ author_profile: true
         font-size: 9px; /* Adjust font size for captions */
         color: #555; /* Color for the caption text */
         margin-top: -15px; /* Space between the image and the caption */
+        display: none; /* Hide captions by default */
     }
     
     a {
@@ -84,19 +85,19 @@ author_profile: true
             <a href="/publications/images/HR/Fig1_LZWHR.png" target="_blank" download onclick="toggleCaption(event, this)">
                 <img src="/publications/images/Fig1_LZW.png" alt="Figure 1" loading="lazy">
             </a>
-            <figcaption style="display: none;">Cycle of a woodboring parasitoid wasp</figcaption>
+            <figcaption>Cycle of a woodboring parasitoid wasp</figcaption>
         </figure>
         <figure>
             <a href="/publications/images/HR/Fig2AHR.png" target="_blank" download onclick="toggleCaption(event, this)">
                 <img src="/publications/images/Fig2A.png" alt="Figure 2" loading="lazy">
             </a>
-            <figcaption style="display: none;">Phylogenetic tree with plotted characters for the non-Ophioniformes</figcaption>
+            <figcaption>Phylogenetic tree with plotted characters for the non-Ophioniformes</figcaption>
         </figure>
         <figure>
             <a href="/publications/images/HR/Fig2BHR.png" target="_blank" download onclick="toggleCaption(event, this)">
                 <img src="/publications/images/Fig2B.png" alt="Figure 3" loading="lazy">
             </a>
-            <figcaption style="display: none;">Phylogenetic tree with plotted characters for the Ophioniformes</figcaption>
+            <figcaption>Phylogenetic tree with plotted characters for the Ophioniformes</figcaption>
         </figure>
     </div>
 
@@ -116,6 +117,10 @@ function toggleCaption(event, link) {
     });
 
     // Show the clicked caption
-    figcaption.style.display = figcaption.style.display === 'block' ? 'none' : 'block';
+    if (figcaption.style.display === 'none') {
+        figcaption.style.display = 'block';
+    } else {
+        figcaption.style.display = 'none';
+    }
 }
 </script>
