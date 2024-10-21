@@ -32,51 +32,36 @@ author_profile: true
         width: 150px; /* Width of images */
         height: auto; /* Maintain aspect ratio */
     }
-        .image-gallery a img:hover {
+    
+    .image-gallery a img:hover {
         transform: scale(1.05); /* Slight zoom effect */
         transition: transform 0.3s ease-in-out;
-        }
+    }
     
-        .image-gallery figcaption {
+    .image-gallery figcaption {
         font-size: 9px; /* Adjust font size for captions */
         color: #555; /* Color for the caption text */
         margin-top: -15px; /* Space between the image and the caption */
     }
     
-        a {
-            color: #333; /* Lighter black for links */
-            text-decoration: none;
-        }
-    
-        a:hover {
-            color: #555; /* Slightly lighter black on hover */
-        }
-    
-        .abstract {
-            text-align: justify;
-        }
-
-        function toggleCaption(link) {
-    const figcaption = link.parentNode.querySelector('figcaption');
-    const isVisible = figcaption.style.display === 'block';
-    
-    // Hide all captions first
-    document.querySelectorAll('.image-gallery figcaption').forEach(caption => {
-        caption.style.display = 'none';
-    });
-
-    // Show the clicked caption
-    if (!isVisible) {
-        figcaption.style.display = 'block';
+    a {
+        color: #333; /* Lighter black for links */
+        text-decoration: none;
     }
-}
-
+    
+    a:hover {
+        color: #555; /* Slightly lighter black on hover */
+    }
+    
+    .abstract {
+        text-align: justify;
+    }
 </style>
 
 <div class="v-card">
     <header>
         <h1>A host driven parasitoid syndrome: Convergent evolution of multiple traits associated with woodboring hosts in Ichneumonidae</h1>
-        <p><strong>Authors:</strong> <u>Dal Pos, D.</u>  & Sharanowski, B. J.</p>
+        <p><strong>Authors:</strong> <u>Dal Pos, D.</u> & Sharanowski, B. J.</p>
         <p><strong>Published in:</strong> <i>PlosOne</i>, 19(9): e0311365, 2024.</p>
         <p><strong>DOI:</strong> <a href="https://doi.org/10.1371/journal.pone.0311365" target="_blank">10.1371/journal.pone.0311365</a></p> 
         <p>
@@ -96,29 +81,41 @@ author_profile: true
 
     <div class="image-gallery">
         <figure>
-            <a href="/publications/images/HR/Fig1_LZWHR.png" target="_blank" download onclick="toggleCaption(this)">
+            <a href="/publications/images/HR/Fig1_LZWHR.png" target="_blank" download onclick="toggleCaption(event, this)">
                 <img src="/publications/images/Fig1_LZW.png" alt="Figure 1" loading="lazy">
             </a>
             <figcaption style="display: none;">Cycle of a woodboring parasitoid wasp</figcaption>
         </figure>
         <figure>
-            <a href="/publications/images/HR/Fig2AHR.png" target="_blank" download onclick="toggleCaption(this)">
+            <a href="/publications/images/HR/Fig2AHR.png" target="_blank" download onclick="toggleCaption(event, this)">
                 <img src="/publications/images/Fig2A.png" alt="Figure 2" loading="lazy">
             </a>
             <figcaption style="display: none;">Phylogenetic tree with plotted characters for the non-Ophioniformes</figcaption>
         </figure>
         <figure>
-            <a href="/publications/images/HR/Fig2BHR.png" target="_blank" download onclick="toggleCaption(this)">
+            <a href="/publications/images/HR/Fig2BHR.png" target="_blank" download onclick="toggleCaption(event, this)">
                 <img src="/publications/images/Fig2B.png" alt="Figure 3" loading="lazy">
             </a>
             <figcaption style="display: none;">Phylogenetic tree with plotted characters for the Ophioniformes</figcaption>
         </figure>
     </div>
-    
-    
 
     <footer>
         <p><a href="/publications/">Back to Publications</a></p>
     </footer>
 </div>
 
+<script>
+function toggleCaption(event, link) {
+    event.preventDefault(); // Prevent the default anchor action
+    const figcaption = link.parentNode.querySelector('figcaption');
+
+    // Hide all captions first
+    document.querySelectorAll('.image-gallery figcaption').forEach(caption => {
+        caption.style.display = 'none';
+    });
+
+    // Show the clicked caption
+    figcaption.style.display = figcaption.style.display === 'block' ? 'none' : 'block';
+}
+</script>
