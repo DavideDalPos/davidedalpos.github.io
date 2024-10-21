@@ -56,6 +56,21 @@ author_profile: true
             text-align: justify;
         }
 
+        function toggleCaption(link) {
+    const figcaption = link.parentNode.querySelector('figcaption');
+    const isVisible = figcaption.style.display === 'block';
+    
+    // Hide all captions first
+    document.querySelectorAll('.image-gallery figcaption').forEach(caption => {
+        caption.style.display = 'none';
+    });
+
+    // Show the clicked caption
+    if (!isVisible) {
+        figcaption.style.display = 'block';
+    }
+}
+
 </style>
 
 <div class="v-card">
@@ -81,24 +96,25 @@ author_profile: true
 
     <div class="image-gallery">
         <figure>
-            <a href="/publications/images/HR/Fig1_LZWHR.png" target="_blank" download>
+            <a href="/publications/images/HR/Fig1_LZWHR.png" target="_blank" download onclick="toggleCaption(this)">
                 <img src="/publications/images/Fig1_LZW.png" alt="Figure 1" loading="lazy">
             </a>
-            <figcaption>Cycle of a woodboring parasitoid wasp</figcaption>
+            <figcaption style="display: none;">Cycle of a woodboring parasitoid wasp</figcaption>
         </figure>
         <figure>
-            <a href="/publications/images/HR/Fig2AHR.png" target="_blank" download>
+            <a href="/publications/images/HR/Fig2AHR.png" target="_blank" download onclick="toggleCaption(this)">
                 <img src="/publications/images/Fig2A.png" alt="Figure 2" loading="lazy">
             </a>
-            <figcaption>Phylogenetic tree with plotted characters for the non-Ophioniformes</figcaption>
+            <figcaption style="display: none;">Phylogenetic tree with plotted characters for the non-Ophioniformes</figcaption>
         </figure>
         <figure>
-            <a href="/publications/images/HR/Fig2BHR.png" target="_blank" download>
+            <a href="/publications/images/HR/Fig2BHR.png" target="_blank" download onclick="toggleCaption(this)">
                 <img src="/publications/images/Fig2B.png" alt="Figure 3" loading="lazy">
             </a>
-            <figcaption>Phylogenetic tree with plotted characters for the Ophioniformes</figcaption>
+            <figcaption style="display: none;">Phylogenetic tree with plotted characters for the Ophioniformes</figcaption>
         </figure>
     </div>
+    
     
 
     <footer>
