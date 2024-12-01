@@ -26,4 +26,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
   gem 'bundler'
+  gem 'nokogiri', '>= 1.16.2'
 end
