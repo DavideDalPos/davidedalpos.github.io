@@ -23,9 +23,7 @@ gem 'jekyll', '~> 4.3.4'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
-  gem "jekyll"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
-  gem 'hawkins'
   gem 'bundler'
 end
