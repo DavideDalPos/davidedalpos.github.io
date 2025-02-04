@@ -4,13 +4,58 @@ title:
 permalink: /contact/
 author_profile: true
 ---
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  color: #333;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+#email-display {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #222;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #0056b3;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinkCursor 0.7s steps(1) infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCursor {
+  50% {
+      border-color: transparent;
+  }
+}
+</style>
+
 
 <main>
   <section class="contact-section">
     <h1>Contact Me</h1>
     <p>If you have any questions or would like to get in touch, feel free to email me at:</p>
 
-    <p class="email-obfuscated" id="email-display">[Enable JavaScript to view email]</p>
+    <p class="email-obfuscated" id="email-display">[Loading email...]</p>
   </section>
 </main>
 
@@ -18,7 +63,20 @@ author_profile: true
   document.addEventListener("DOMContentLoaded", function () {
     const user = "daveliga";
     const domain = "example.com";
-    const emailDisplay = document.getElementById("email-display");
-    emailDisplay.textContent = `${user}@${domain}`;
+    const email = `${user}@${domain}`;
+    const display = document.getElementById("email-display");
+
+    let index = 0;
+    function typeEmail() {
+      if (index < email.length) {
+        display.textContent += email.charAt(index);
+        index++;
+        setTimeout(typeEmail, 100); // Typing speed
+      }
+    }
+
+    display.textContent = ""; // Clear the initial text
+    typeEmail();
   });
 </script>
+
