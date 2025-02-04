@@ -6,27 +6,88 @@ author_profile: true
 ---
 <style>
 
-.research {
+.research-network {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.research h1 {
-  font-size: 2.5em; /* Adjust title size */
+.research-network h1 {
+  font-size: 2.5em;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.research p {
-  font-size: 1.1em; /* Adjust paragraph size */
-  color: #555;
-  line-height: 1.6; /* Adjust line height for readability */
+.network-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
+.node {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.node h3 {
+  font-size: 1.6em;
+  color: #0073e6;
+}
+
+.node ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.node ul li {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 8px;
+}
+
+.node:hover {
+  background-color: #f0faff;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 </style>
 
 <!-- About Me Section -->
-<div class="research">
-  <h1>Research</h1> <!-- Title of the page -->
-  <p>Hello! My name is [Your Name], and I am a [Your Profession]. 
-    I have a passion for [your passion or interests], and I've spent the last 
-    few years working on [relevant projects or experiences].</p>
+<div class="research-network">
+  <h1>Research Interests</h1>
+
+  <div class="network-container">
+    <div class="node">
+      <h3>Evolution</h3>
+      <ul>
+        <li>Comparative Analysis</li>
+        <li>Host Shifts</li>
+      </ul>
+    </div>
+    <div class="node">
+      <h3>Morphology</h3>
+      <ul>
+        <li>Ovipositor Function</li>
+        <li>Skeleto-Musculature</li>
+      </ul>
+    </div>
+    <div class="node">
+      <h3>Parasitoid Wasps</h3>
+      <ul>
+        <li>Life Cycle</li>
+        <li>Ecology & Behavior</li>
+      </ul>
+    </div>
+    <div class="node">
+      <h3>Hymenoptera</h3>
+      <ul>
+        <li>Ichneumonidae</li>
+        <li>Convergent Evolution</li>
+      </ul>
+    </div>
+  </div>
 </div>
