@@ -5,53 +5,36 @@ permalink: /contact/
 author_profile: true
 ---
 <style>
-
-.contact-section {
-  max-width: 600px;
-  margin: auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.v-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-h1 {
-  color: #0056b3;
-  margin-bottom: 10px;
+.contact-card h2 {
+  margin-top: 0;
+  color: #333;
 }
 
-#email-display {
+.email {
   font-weight: bold;
-  font-size: 1.4em;
-  color: #222;
+  color: #0056b3;
   letter-spacing: 0.5px;
-  border-bottom: 2px solid #0056b3;
-  display: inline-block;
-  padding-bottom: 4px;
-  margin-top: 10px;
   white-space: nowrap;
   overflow: hidden;
-  animation: blinkCursor 0.7s steps(1) infinite;
-}
-
-/* Blinking cursor effect */
-@keyframes blinkCursor {
-  50% {
-      border-color: transparent;
-  }
 }
 </style>
 
 
-<main>
-  <section class="contact-section">
-    <h1>Contact Me</h1>
-    <p>If you have any questions or would like to get in touch, feel free to email me at:</p>
-
-    <p class="email-obfuscated" id="email-display">[Loading email...]</p>
-  </section>
-</main>
+<div class="v-card contact-card">
+  <h2>Contact Me</h2>
+  <p>If you’d like to get in touch, feel free to email me at:</p>
+  <p class="email" id="email-display">[Loading email...]</p>
+</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -65,12 +48,13 @@ h1 {
       if (index < email.length) {
         display.textContent += email.charAt(index);
         index++;
-        setTimeout(typeEmail, 100); // Typing speed
+        setTimeout(typeEmail, 80); // Typing speed
       }
     }
 
-    display.textContent = ""; // Clear the initial text
+    display.textContent = ""; // Clear placeholder
     typeEmail();
   });
 </script>
+
 
