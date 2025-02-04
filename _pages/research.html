@@ -13,46 +13,68 @@ author_profile: true
 
 .research-network h1 {
   font-size: 2.5em;
-  color: #333;
-  margin-bottom: 20px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .network-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .node {
-  background-color: #f9f9f9;
+  background-color: #fff;
+  border: 2px solid #2980b9;
   border-radius: 12px;
-  padding: 20px;
-  width: 250px;
+  padding: 25px;
+  width: 220px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 .node h3 {
-  font-size: 1.6em;
-  color: #0073e6;
+  font-size: 1.5em;
+  color: #2980b9;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .node ul {
   list-style-type: none;
   padding-left: 0;
+  margin-top: 10px;
 }
 
 .node ul li {
   font-size: 1.1em;
-  color: #555;
+  color: #7f8c8d;
   margin-top: 8px;
 }
 
 .node:hover {
-  background-color: #f0faff;
-  transform: scale(1.05);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #ecf0f1;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
 }
+
+.node ul li:hover {
+  color: #2980b9;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .network-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 
 </style>
 
@@ -62,32 +84,40 @@ author_profile: true
 
   <div class="network-container">
     <div class="node">
-      <h3>Evolution</h3>
+      <h3>Collection Management</h3>
       <ul>
-        <li>Comparative Analysis</li>
+        <li>Specimen Organization</li>
+        <li>Database Integration</li>
+      </ul>
+    </div>
+    <div class="node">
+      <h3>Databasing</h3>
+      <ul>
+        <li>Data Collection</li>
+        <li>Data Validation</li>
+      </ul>
+    </div>
+    <div class="node">
+      <h3>Entomology</h3>
+      <ul>
+        <li>Insect Behavior</li>
+        <li>Ecology & Evolution</li>
+      </ul>
+    </div>
+    <div class="node">
+      <h3>Evolutionary Morphology</h3>
+      <ul>
+        <li>Functional Morphology</li>
         <li>Host Shifts</li>
       </ul>
     </div>
     <div class="node">
-      <h3>Morphology</h3>
+      <h3>Taxonomy (Ichneumonidae)</h3>
       <ul>
-        <li>Ovipositor Function</li>
-        <li>Skeleto-Musculature</li>
-      </ul>
-    </div>
-    <div class="node">
-      <h3>Parasitoid Wasps</h3>
-      <ul>
-        <li>Life Cycle</li>
-        <li>Ecology & Behavior</li>
-      </ul>
-    </div>
-    <div class="node">
-      <h3>Hymenoptera</h3>
-      <ul>
-        <li>Ichneumonidae</li>
-        <li>Convergent Evolution</li>
+        <li>Species Identification</li>
+        <li>Phylogenetic Analysis</li>
       </ul>
     </div>
   </div>
 </div>
+
